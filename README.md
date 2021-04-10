@@ -4,7 +4,13 @@ time: 01:16
 tags:
 ---
 
+# What is VOE?
+
+
 # Roadmap for VOE
-- [ ] Add all the built in featurres, and most common plugins with proper description
+- [ ] Add all the built in features, and most common plugins with proper description
 - [ ] Add all the articles for the community members with an index of content
-- [ ] 
+
+
+# How to contribute?
+If you want to contribute to an article in this wiki, consider writing it in [Obsidian Forum](https://forum.obsidian.md/), (_Share and Showcase_ section might be most suitable) and then give the link in Obsidian Discord with `#ForVOE @riddyrayes#7583` message.

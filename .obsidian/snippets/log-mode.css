@@ -1,0 +1,45 @@
+/*From https://github.com/santiyounger/Org-sidian-Bullets*/
+
+  /* This code applies org-sidian to preview mode */
+  /* updated */
+/* 2020-10-28 14:09 */
+
+    .logmode h2:before {
+    margin-left: 40px;
+    margin-right: 6px;
+    content: "✼";
+    font-size: 25px;
+    color: var(--headers);
+    }
+
+    .logmode h3:before {
+    margin-left: 80px;
+    margin-right: 8px;
+    content: "✸";
+    font-size: 16px;
+    color: #D34B08;
+    }
+
+    .logmode h4:before {
+    margin-left: 120px;
+    margin-right: 8px;
+    content: "◉";
+    font-size: 20px;
+    color: var(--headers);
+    }
+
+    .logmode h5:before {
+    margin-left: 160px;
+    margin-right: 8px;
+    content: "⭗";
+    font-size: 14px;
+    color: var(--headers);
+    }
+
+    .logmode h6:before {
+    margin-left: 200px;
+    margin-right: 8px;
+    content: "✸";
+    font-size: 16px;
+    color: var(--headers);
+    }

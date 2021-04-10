@@ -1,7 +1,8 @@
 ---
 created: 2021-03-29
-summary: "A guide to the Obsidian.md ecosystem, as per the opinion of @riddyrayes"
-version: 0.1
+summary: "A guide to the Obsidian.md ecosystem, from @riddyrayes"
+version: 0.2
+cssclass: logmode
 ---
 
 # Stages in Eruption
@@ -11,18 +12,18 @@ A local wiki style introduction to **Obsidian ecosystem** with a 🌋 volcano th
 - [[#The Emissions]] - the important information for starting week
 - [[#The Venting]] - Knowledge Management Techniques, Integration with other Editors, Folders and Tags best uses
 - [[#The Buildup]] - technical aspects of note taking and managing - Diagrams, Equations
-- [[#The Collapse]] - applied aspects of note taking and managing - Task Management, Zotero Integration and Citation management
+- [[#The Collapse]] - applied aspects of note making and managing - Task Management, Zotero Integration and Citation management
 - [[#The Explosion]] - spider webbing a large vault
 - [[#The Growth and failures]] - growing into a galactic civilization
-- [[#The Ash and Lava]] - sharing to public 
+- [[#The Ash and Lava]] - sharing the vault to public 
 - [[#Back to Dormant]] - further development in ecosystem and workflow
 
 
-
+Open the outline view of this note to have a quick access to all the headings.
 
 
 # The Quakes
-_the very first of the first stuff_
+> _the very first of the first stuff_
 
 
 - CTRL+E
@@ -30,15 +31,20 @@ _the very first of the first stuff_
 - CTRL+O
 
 ## Markdown Syntax _(unofficially) Obsidian flavored_
+### Links and Embeds
 `[[note]]`
 `![[note]]`
 `[[note#heading]]`
 `![[pic.png]]`
 `[[file.extension]]`
 
+### Text Styles
 `**bold**`
 `*italic*` `_italic_`
 `~~strikethrough~~`
+`> quotes`
+
+### Headings
 
 ~~~
 # Heading 1
@@ -49,12 +55,13 @@ _the very first of the first stuff_
 ###### Heading 6
 ~~~
 
+
 ## Necessary Settings and _core_ Plugins
 ## Subjectively Good Themes
 ## "Necessary" _community_ Plugins
 
 # The Emissions
-
+> *the important information for beginners*
 ## In-built features
 > More in the article [[Internals]]
 
@@ -66,7 +73,7 @@ The use of mobile app and desktop apps different in a lot ways. There are some b
 > More in the article [[Obsidian.md#Sync]]
 
 ### GitHub repo Sync
-> More in the article [[Github#GitHub repo Sync]]
+> More in the article [[GitHub#GitHub repo Sync]]
 
 ### Drive Backup and Sync
 Services like Google Drive, OneDrive and iCloud
@@ -81,6 +88,10 @@ Services like Google Drive, OneDrive and iCloud
 ## The Community ❤️
 ## Community Plugins
 > More in article [[Community Plugins]]
+
+### Calendar Plugin
+
+### Sliding Panes Plugin
 ## CSS Themes and Snippets
 > More in article [[Community Themes]]
 There are community themes that can be downloaded from settings.
@@ -93,8 +104,8 @@ There are numerous css snippets from the community used for various purposes.
 > More in the article [[CSS Development]]
 
 # The Venting
-_Knowledge Management Techniques, Other Editors, Folders, Tags_
-## Knowledge Management, _Linking your Thinking_^[Not out of context with[[Linking your Thinking]]] and Styling of Notes
+> _Knowledge Management Techniques, Other Editors, Folders, Tags_
+## Knowledge Management, Linking and Styling of Notes
 > More in the article [[Mechanisms]]
 
 ^[https://forum.obsidian.md/t/cataloging-classification-information-science-pkms-and-you/10071]
@@ -113,8 +124,7 @@ _Knowledge Management Techniques, Other Editors, Folders, Tags_
 
 ## Tags
 > More in article [[Tags]]
-### Nested Tags
-### Search _Tags, anti-tags_
+
 ## Other Applications
 - [[Xjournal++]]
 
@@ -125,7 +135,7 @@ _Knowledge Management Techniques, Other Editors, Folders, Tags_
 
 
 # The Buildup
-_technical aspects of note taking and managing_
+> _technical aspects of note taking and managing_
 ## Search
 
 ## Query and Dataview
@@ -155,25 +165,37 @@ _technical aspects of note taking and managing_
 ## Podcasts
 
 # The Collapse
-_applied aspects of management_
+> _applied aspects of note making and managing_
 ## Zotero Integration
 > More in article [[Zotero]]
-## Spaced Repetition
-> More in article [[Mechanisms#Spaced Repetition]]
+## Active Recall and Spaced Repetition
+> More in article [[Mechanisms#Active Recall and Spaced Repetition]]
+- [[Anki]]
+- [[RemNote]]
+- [[Neuracache]]
+
 ## Task Management
 > More in article [[Mechanisms#Task Management]]
+- GTD Plugin
+- Kanban Boards
+- Day planner
+
 
 # The Explosion
+> _spider webbing a large vault_
 ## The Graph View
 > More in the article [[The Graph View]]
 ### Local Graph
 
 
+## Idea Emergence
 # The Growth and failures
+> _growing into a galactic civilization_
 ## File recovery
 ## 
 
 # The Ash and Lava
+> *sharing the vault to public*
 ## Obsidian Publish
 > More in the article [[Obsidian.md#Publish]]
 ## GitHub Pages
@@ -183,6 +205,7 @@ _applied aspects of management_
 
 
 # Back to Dormant
+> _further development in ecosystem and workflow_
 ## LaTex
 > More in the article [[LaTex]]
 

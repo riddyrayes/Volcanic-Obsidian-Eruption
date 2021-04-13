@@ -4,11 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "91b77e1064c600b8",
+        "id": "125bc4e31598d0a2",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Volcanic Obsidian Eruption.md",
+            "mode": "preview"
+          }
         }
       }
     ],
@@ -77,7 +80,7 @@
       {
         "id": "b363ef98ef598a95",
         "type": "tabs",
-        "dimension": 30.75980392156863,
+        "dimension": 43.31288343558282,
         "children": [
           {
             "id": "d19650279ddfeecb",
@@ -85,12 +88,13 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Volcanic Obsidian Eruption.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
+                "backlinkCollapsed": true,
                 "unlinkedCollapsed": false
               }
             }
@@ -101,6 +105,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Volcanic Obsidian Eruption.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -123,25 +128,28 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.115250753410665,
+                  "scale": 0.31094606074576364,
                   "close": true
                 }
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "dbd20d91e97cfd59",
         "type": "tabs",
-        "dimension": 69.24019607843137,
+        "dimension": 56.687116564417174,
         "children": [
           {
             "id": "2a0e2fa2534b40a9",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Volcanic Obsidian Eruption.md"
+              }
             }
           }
         ]
@@ -150,17 +158,17 @@
     "direction": "horizontal",
     "width": 317.3992919921875
   },
-  "active": "91b77e1064c600b8",
+  "active": "125bc4e31598d0a2",
   "lastOpenFiles": [
-    "README.md",
     "Volcanic Obsidian Eruption.md",
-    "Mechanisms/Mechanisms.md",
-    "Internals/Folders.md",
-    "Internals/Internals.md",
-    "Externals/Externals.md",
-    "Pasted image 20210413140132.png",
-    "Externals/Zotero.md",
-    "Externals/VScode.md",
-    "Externals/LogSeq.md"
+    "Developer Mode/Developer Mode.md",
+    "Developer Mode/Community Plugins.md",
+    "Developer Mode/CSS Snippets.md",
+    "Developer Mode/CSS Development.md",
+    "Community/Community.md",
+    "Community/CSS Development.md",
+    "CSS Development.md",
+    "Internals/Obsidian.md.md",
+    "YAML Frontmatter.md"
   ]
 }

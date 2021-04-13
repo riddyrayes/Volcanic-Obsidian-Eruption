@@ -117,7 +117,7 @@ Choose a "Hotkey" configuration for the commands
 
 ### Core plugins
 Most plugins appear in the little left menu. ![[Pasted image 20210413142730.png|right|30]] They have a separate settings options list:
-![[Pasted image 20210413150810.png|150]]
+![[Pasted image 20210413150810.png|150]] ^46dd
 1. [[#Tags]] - Use `#tags` to group notes based on any label. The tag pane arrives at the right pane. Drag to any preferable spot.
 2. **Page Preview** - Hover over links to preview note.
 ![[Pasted image 20210413150446.png|500]]
@@ -173,9 +173,9 @@ Services like Google Drive, OneDrive and iCloud
 There are community themes that can be downloaded from settings.
 
 ### Exploring Snippets
-> More in article [[CSS Solutions]]
+> More in article [[CSS Snippets]]
 
-There are numerous css snippets from the community used for various purposes.
+There are numerous CSS snippets from the community used for various purposes.
 ### Development
 > More in the article [[CSS Development]]
 

@@ -9,7 +9,7 @@ tags:
 # *Linking your Thinking*
 
 # Active Recall and Spaced Repetition
-
+^[![[Bryan Jenks#Spaced Repetition]]]
 # Outlining
 > The terminologies are used and defined only here and vague, and elsewhere may be defined differently. Readers are suggested to read the content and not take the method by name value.
 

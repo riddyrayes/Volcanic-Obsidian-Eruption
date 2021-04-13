@@ -10,6 +10,7 @@ Volcanic Obsidian Eruption is a wiki tutorial on how to use Obsidian from Basic 
 - Download this repository from top green option and unzip it.
 - Open it using Obsidian from the option "Open folder as a vault"
 - Click on **Turn off safe mode** option
+- Go to Settings and **turn on** the two community plugins installed
 -  Start with [[Volcanic Obsidian Eruption]] note
 
 # Roadmap for VOE

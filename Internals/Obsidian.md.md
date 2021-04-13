@@ -4,4 +4,8 @@ time: 21:32
 tags: 
 ---
 
-# 
+# Obsidian.md
+
+# Licenses
+
+# Paid features

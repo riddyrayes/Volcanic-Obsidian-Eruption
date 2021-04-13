@@ -7,5 +7,6 @@ tags:
 # Search Queries
 
 # Dataview plugin
+^[![[Bryan Jenks#DataView Outliner Templater plugins]]]
 
 # oql - Query Language

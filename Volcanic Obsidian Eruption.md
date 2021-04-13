@@ -21,7 +21,6 @@ A local wiki style introduction to **Obsidian ecosystem** with a 🌋 volcano th
 > DON'T PANIC
 
 ```ad-info
-
 Reader is requested to only read ==The Quakes== part on day 1 of using Obsidian.
 ```
 

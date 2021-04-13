@@ -18,19 +18,43 @@ A local wiki style introduction to **Obsidian ecosystem** with a 🌋 volcano th
 - [[#The Ash and Lava]] - sharing the vault to public 
 - [[#Back to Dormant]] - further development in ecosystem and workflow
 
+> DON'T PANIC
 
-Open the outline view of this note to have a quick access to all the headings.
+```ad-info
 
+Reader is requested to only read ==The Quakes== part on day 1 of using Obsidian.
+```
 
 # The Quakes
-> _the very first of the first stuff_
+```abstract
+the very first of the first stuff
+``` 
 
+```ad-note
+The reader is advised to 
+- Open a blank vault and make a note
+- readout the Official Help pages alongside this section of the wiki; available at bottom left '?' button.
+```
+1. Create a blank note.
+2. Writing note on Obsidian uses two modes, Preview and Edit. It can be toggled from top right button.
+![[Pasted image 20210413154347.png]]
 
-- CTRL+E
-- CTRL+P
-- CTRL+O
+The first Hotkeys to learn:
+- CTRL+E - Switch from **Preview** to **edit mode**
+- CTRL+P - Open **command palette**, to search for various operations to do
+- CTRL+O - Quickly open some note or create a new one
+
+<br>
+
+- *Obsidian* is a file editor and databasing tool, wrapped around as a note writing and note taking tool, with an ambition to become a "second brain".
+- It is very customizable and programmable in its functionality and appearance.
+- Every knowledge of file and folders works on Obsidian vaults.
+- The learning curve is NOT steep, but the learning and setup time requires a little patience.
+- For readers information, Obsidian is built on [Electron](https://www.electronjs.org/)
 
 ## Markdown Syntax _(unofficially) Obsidian flavored_
+
+Writing in Obsidian uses basic Markdown syntax. 
 ### Links and Embeds
 `[[note]]`
 `![[note]]`
@@ -56,9 +80,62 @@ Open the outline view of this note to have a quick access to all the headings.
 ~~~
 
 
-## Necessary Settings and _core_ Plugins
-## Subjectively Good Themes
-## "Necessary" _community_ Plugins
+## Necessary Settings
+![[Pasted image 20210413140132.png|right|150]] CTRL+, or click on Settings icon at bottom right to open settings.
+There would be a list of OPTIONS to open from:
+
+The default settings works fine mostly, the things that advised to change and to be informed about are:
+
+### Editor
+- **Spell Check** - Currently only Available for American English
+- **Readable Line length** - Turning it off makes the editor take use of total available width to type in
+- **Fold** - Fold headers and lists using a little triangle, folding is not lost after a note is closed
+- **Default *New Pane* mode** - Open in Edit mode or in Preview mode as default
+- **Auto convert HTML** - While copying from any website it converts the pasted text to a preview friendly version. Pasting using CTRL+SHIFT+V pastes the raw text. Although this would be frustrating for pasting codes as it converts `[` to `\[`
+
+```ad-warning
+Do not turn on Vim key bindings if you are unfamiliar with Vim editor.
+```
+### Files & Links
+- **File deletion**
+![[Pasted image 20210413143412.png|500]]
+- **Default location** - *Same folder as current file* is a desirable option if reader plans to use [[#Folders|folders]] in the vault
+- **Detect all file extensions** - Detects all available files and when clicked, opens in default app.
+### Appearance
+1. Click on Browse: ![[Pasted image 20210413152628.png|400]]
+2. Choose a theme. New users are advised to try "Obsidinite" theme for first use.
+3. Click on Use
+### Hotkeys
+Choose a "Hotkey" configuration for the commands
+
+### About
+- Keep Automatic updates turned on
+- Make sure to reinstall Obsidian of the installer version becomes too old
+- Turn on Receive insider builds if user is on [[Obsidian Catalyst]]
+
+### Account
+- No account required if Obsidian Sync, Publish or Receive insider builds are not desired
+
+### Core plugins
+Most plugins appear in the little left menu. ![[Pasted image 20210413142730.png|right|30]] They have a separate settings options list:
+![[Pasted image 20210413150810.png|150]]
+1. [[#Tags]] - Use `#tags` to group notes based on any label. The tag pane arrives at the right pane. Drag to any preferable spot.
+2. **Page Preview** - Hover over links to preview note.
+![[Pasted image 20210413150446.png|500]]
+3. **Starred** - Make a list of notes that are "Starred"
+4. **Markdown format importer** - Turn off if reader is not a Roam or Bear user
+5. [[#Daily notes]]
+6. [[#Templates]]
+7. **Zettelkasten prefixer** - For Zettelkasten user can be used an 'Inbox' of notes
+8. **Random note** - Opens a random note
+9. **Outline** - Open a "ouline" from all `#` headers from Note options at top right triple dots.
+ ![[Pasted image 20210413152947.png]] ![[Pasted image 20210413153143.png]] ![[Pasted image 20210413151412.png|200]]
+10. **Slides** - Use a note to start a full screen presentation
+11. **Audio recorder** - Record audio
+12. **Workspace** - Save the current configuration of notes as "Workspace"
+![[Pasted image 20210413151525.png|200]]
+13. **File recovery** - File versioning and recovery for notes
+14. **Publish and Sync** - Paid [[Obsidian.md]] features
 
 # The Emissions
 > *the important information for beginners*
@@ -211,7 +288,8 @@ There are numerous css snippets from the community used for various purposes.
 
 For more rigorous use of mathematical notation and equations, chemical structures and equations, diagrams, we must use the industry standard - [[LaTex]]. Various Tex utility software like TexStudio, services, or even Vim can be used to create LaTex documents but for the purpose of keeping a familiar aspect to a unfamiliar wold, we shall use [[VScode]] to write LaTex documents and integrate with Obsidian.
 
-
+## LYT Kit
+The kit suggests readers to have at least 100 notes. This is a best place to expand more on Mechanisms.
 
 
 # References

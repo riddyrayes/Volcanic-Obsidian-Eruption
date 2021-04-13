@@ -9,6 +9,7 @@ tags:
 # Settings
 # Options from an opened note
 # A complete list of in-built features and core plugins
+- Search
 - [[YAML Frontmatter]]
 - [[The Graph View]]
 

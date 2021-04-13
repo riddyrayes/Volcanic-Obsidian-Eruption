@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Volcanic Obsidian Eruption.md",
-            "mode": "preview"
+            "file": "README.md",
+            "mode": "source"
           }
         }
       }
@@ -88,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Volcanic Obsidian Eruption.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Volcanic Obsidian Eruption.md",
+                "file": "README.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Volcanic Obsidian Eruption.md"
+                "file": "README.md"
               }
             }
           }
@@ -159,11 +159,11 @@
   },
   "active": "bf7d0c63fe80b32c",
   "lastOpenFiles": [
+    "README.md",
     "Volcanic Obsidian Eruption.md",
     "Mechanisms/Mechanisms.md",
     "Internals/Folders.md",
     "Internals/Internals.md",
-    "README.md",
     "Externals/Externals.md",
     "Pasted image 20210413140132.png",
     "Externals/Zotero.md",

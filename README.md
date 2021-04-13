@@ -5,7 +5,10 @@ tags:
 ---
 
 # What is VOE?
+Volcanic Obsidian Eruption is a wiki tutorial on how to use Obsidian from Basic to Advanced level. It helps users to get comfortable with all the features available inside and alongside Obsidian with self-taught knowledge.
 
+- Download this repository from top green option and unzip it.
+- Open it using Obsidian from the option "Open folder as a vault".
 
 # Roadmap for VOE
 - [ ] Add all the built in features, and most common plugins with proper description

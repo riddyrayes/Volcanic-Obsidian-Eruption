@@ -8,5 +8,11 @@ tags:
 
 # Dataview plugin
 ^[![[Bryan Jenks#DataView Outliner Templater plugins]]]
+^[![[Obsidian Community Talks#Dataview ft SkepticMystic]]]
+^[![[Nick Milo#Dataview and its creator Tres Brenan]]]
+
+# Possibilities
+- Task Management
+- Relational Databases
 
 # oql - Query Language

@@ -4,10 +4,12 @@ time: 21:17
 tags: 
 ---
 
-# Knowledge Management
+# Personal Knowledge Management
+^[![[Nick Milo#PKM Series]]]
 
 # *Linking your Thinking*
-
+^[![[Nick Milo#Linking Your Thinking]]]
+^[![[Nick Milo#LYT series]]]
 # Active Recall and Spaced Repetition
 ^[![[Bryan Jenks#Spaced Repetition]]]
 # Outlining
@@ -17,14 +19,8 @@ Outlining of ideas is done in various different reasons ranging from creation of
 
 We generally want to close up some higher level 
 
-There are two different ways to implement this:
-
-1. Using unordered or ordered lists - [[#Outline Mode]]
-2. Using 6 Heading levels- [[#LogMode]]
-
 ## Outline Mode
 
-## LogMode
 
 ## Mind Map
 

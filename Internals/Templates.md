@@ -7,5 +7,6 @@ tags:
 # Templates
 
 # Templater plugin
+[[Templeter Scripts]]
 
-# Hotkeys for Templates
+# Hotkeys for Templates (plugin)

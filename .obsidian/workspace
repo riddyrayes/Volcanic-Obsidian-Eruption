@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "125bc4e31598d0a2",
+        "id": "4f5e4a2347df446d",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "logmode",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -71,7 +71,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 170.00247955322266
+    "width": 206.00247955322266
   },
   "right": {
     "id": "ac4379189a15bf05",
@@ -80,7 +80,6 @@
       {
         "id": "b363ef98ef598a95",
         "type": "tabs",
-        "dimension": 43.31288343558282,
         "children": [
           {
             "id": "d19650279ddfeecb",
@@ -94,7 +93,7 @@
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": true,
+                "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
               }
             }
@@ -118,9 +117,9 @@
                   "hideUnresolved": false,
                   "collapse-color-groups": true,
                   "colorGroups": [],
-                  "collapse-display": true,
+                  "collapse-display": false,
                   "showArrow": false,
-                  "textFadeMultiplier": 0,
+                  "textFadeMultiplier": -2.2,
                   "nodeSizeMultiplier": 1,
                   "lineSizeMultiplier": 1,
                   "collapse-forces": true,
@@ -128,20 +127,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.4759714257697933,
+                  "scale": 0.47597142576979246,
                   "close": true
                 }
               }
             }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "dbd20d91e97cfd59",
-        "type": "tabs",
-        "dimension": 56.687116564417174,
-        "children": [
+          },
           {
             "id": "2a0e2fa2534b40a9",
             "type": "leaf",
@@ -152,23 +143,25 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 317.3992919921875
+    "width": 290.3992919921875,
+    "collapsed": true
   },
-  "active": "125bc4e31598d0a2",
+  "active": "4f5e4a2347df446d",
   "lastOpenFiles": [
     "Volcanic Obsidian Eruption.md",
+    "Mechanisms/Mechanisms.md",
+    "Externals/Externals.md",
+    "Internals/Internals.md",
     "Developer Mode/Developer Mode.md",
-    "Developer Mode/Community Plugins.md",
+    "README.md",
     "Developer Mode/CSS Snippets.md",
-    "Developer Mode/CSS Development.md",
-    "Community/Community.md",
-    "Community/CSS Development.md",
-    "CSS Development.md",
-    "Internals/Obsidian.md.md",
-    "YAML Frontmatter.md"
+    "Internals/YAML Frontmatter.md",
+    "Internals/The Graph View.md",
+    "Internals/Templeter Scripts.md"
   ]
 }

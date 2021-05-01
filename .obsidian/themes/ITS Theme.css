@@ -3,17 +3,24 @@ name: In The Shadows Settings
 id: ITS
 settings:
     -
-        title: Text Fonts
-        id: text-fonts
+        title: Text
+        id: Text-CSS
         type: heading
         level: 2
-    - 
+    -
+        title: Fonts
+        id: text-fonts
+        type: heading
+        level: 3
+    -
         title: Headings
+        description: Heading and Vault Title fonts.
         id: font
         type: variable-text
         default: "'Calisto MT', 'Palatino Black', 'Book Antiqua', 'Georgia', 'Suez One', serif"
     -
         title: Text
+        description: Changes text font for preview and edit mode. 
         id: default-font
         type: variable-text
         default: "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Microsoft YaHei Light', sans-serif"
@@ -22,28 +29,71 @@ settings:
         id: font-monospace
         type: variable-text
         default: "'Fira Code Medium', 'Source Code Pro', monospace"
-    
-
-
+    -
+        title: Size
+        id: text-size
+        type: heading
+        level: 3
+    -
+        title: Text Size
+        description: Adjust size for preview/editor mode. If you use the one below, this only affects editor mode.
+        id: f-s-text
+        type: variable-number-slider
+        default: 1
+        format: em
+        min: .6
+        max: 1.5
+        step: .1
+    -
+        title: Preview Text Size
+        description: Adjust size for preview mode.
+        id: f-s-pre
+        type: variable-number-slider
+        default: 1
+        format: em
+        min: .6
+        max: 1.5
+        step: .1
+    -
+        title: Header Weights
+        id: f-w-h
+        type: variable-number-slider
+        default: 600
+        min: 100
+        max: 900
+        step: 100
+    -
+        title: Header Height
+        id: head-h
+        type: variable-number-slider
+        default: 15
+        format: px
+        min: 0
+        max: 30
+        step: 5
+    -
+        title: Line Height
+        id: lh
+        type: variable-number-slider
+        default: 1.5
+        format: em
+        min: 1
+        max: 2
+        step: .1
     -
         title: Colors
-        id: Colors
-        type: heading
-        level: 2
-    - 
-        title: Text
-        id: Text-Colors
+        id: text-colors
         type: heading
         level: 3
     - 
-        title: Text Color
+        title: Text
         id: text
         type: variable-themed-color
         format: hex
         default-dark: '#bccad8'
         default-light: '#697580'
     - 
-        title: Faint Text Color
+        title: Faint Text
         id: soft-text
         type: variable-themed-color
         format: hex
@@ -51,16 +101,364 @@ settings:
         default-light: '#d04e4e'
     - 
         title: Headings
-        description: Heading and Vault title colors.
-        id: header
+        description: Heading, Vault title, HR Symbol, blockquote quotation mark, and open folder icon colors.
+        id: headers
         type: variable-themed-color
         format: hex
         default-dark: '#c14343'
         default-light: '#d04e4e'
-
-
-
-
+    - 
+        title: File Title
+        description: File text color.
+        id: file
+        type: variable-themed-color
+        format: hex
+        default-dark: '#aab3ca'
+        default-light: '#7e8ea3'
+    - 
+        title: Code Text
+        id: code-text
+        type: variable-themed-color
+        format: hex
+        default-dark: '#fa4545'
+        default-light: '#ea4262'
+    -
+        title: <i></i>
+        description: <i></i> text color.
+        id: i-at
+        type: variable-themed-color
+        format: hex
+        default-dark: '#bf5e5e'
+        default-light: '#c14343'
+    - 
+        title: Footnotes
+        id: footnote
+        type: variable-themed-color
+        format: hex
+        default-dark: '#6e7e89'
+        default-light: '#8996a0'
+    -
+        title: Specific View Font Changes
+        id: Font-Specific
+        type: heading
+        level: 3
+    -
+        title: Different Preview/Editor Text
+        description: If toggled on, Text only affects UI text.
+        id: ed-pre
+        type: class-toggle
+    -
+        title: Preview Text
+        description: Changes text font for preview mode.
+        id: pre-font
+        type: variable-text
+        default: "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Microsoft YaHei Light', sans-serif"
+    -
+        title: Editor Text
+        description: Changes text font for edit mode.
+        id: ed-font
+        type: variable-text
+        default: "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Microsoft YaHei Light', sans-serif"
+    -
+        title: Specific View Heading Changes
+        id: Heading-Specific
+        type: heading
+        level: 3
+    -
+		title: Specific Heading Adjustments
+		description: Toggle on to edit headings individually.
+		id: head-spec
+		type: class-toggle
+	-
+		title: Heading Fonts
+		id: Spec-Font-Head
+		type: heading
+		level: 4
+	- 
+		title: Heading 1 Font Preview
+		id: sphd-pre-ff-1
+		type: variable-text
+		default: "'Calisto MT', 'Palatino Black', 'Suez One', 'serif'"
+    - 
+		title: Heading 1 Font Editor
+		id: sphd-ed-ff-1
+		type: variable-text
+		default: "'Calisto MT', 'Palatino Black', 'Suez One', 'serif'"
+	- 
+		title: Heading 2 Font Preview
+		id: sphd-pre-ff-2
+		type: variable-text
+		default: "'Calisto MT', 'Palatino Black', 'Suez One', 'serif'"
+	- 
+		title: Heading 2 Font Editor
+		id: sphd-ed-ff-2
+		type: variable-text
+		default: "'Calisto MT', 'Palatino Black', 'Suez One', 'serif'"
+	- 
+		title: Heading 3 Font Preview
+		id: sphd-pre-ff-3
+		type: variable-text
+		default: "'Calisto MT', 'Palatino Black', 'Suez One', 'serif'"
+	- 
+		title: Heading 3 Font Editor
+		id: sphd-ed-ff-3
+		type: variable-text
+		default: "'Calisto MT', 'Palatino Black', 'Suez One', 'serif'"
+	- 
+		title: Heading 4 Font Preview
+		id: sphd-pre-ff-4
+		type: variable-text
+		default: "'Calisto MT', 'Palatino Black', 'Suez One', 'serif'"
+	- 
+		title: Heading 4 Font Editor
+		id: sphd-ed-ff-4
+		type: variable-text
+		default: "'Calisto MT', 'Palatino Black', 'Suez One', 'serif'"
+	- 
+		title: Heading 5 Font Preview
+		id: sphd-pre-ff-5
+		type: variable-text
+		default: "'Calisto MT', 'Palatino Black', 'Suez One', 'serif'"
+	- 
+		title: Heading 5 Font Editor
+		id: sphd-ed-ff-5
+		type: variable-text
+		default: "'Calisto MT', 'Palatino Black', 'Suez One', 'serif'"
+	- 
+		title: Heading 6 Font Preview
+		id: sphd-pre-ff-6
+		type: variable-text
+		default: "'Calisto MT', 'Palatino Black', 'Suez One', 'serif'"
+	- 
+		title: Heading 6 Font Editor
+		id: sphd-ed-ff-6
+		type: variable-text
+		default: "'Calisto MT', 'Palatino Black', 'Suez One', 'serif'"
+	-
+        title: Heading Size
+        id: Spec-Size-Head
+        type: heading
+        level: 4
+	-
+		title: Heading 1 Size Preview
+		id: sphd-pre-fs-1
+		type: variable-number-slider
+        default: 34
+        format: em
+        min: .8
+        max: 1.5
+        step: .1	
+	-
+		title: Heading 1 Size Editor
+		id: sphd-ed-fs-1
+		type: variable-number-slider
+        default: 34
+        format: px
+        min: 18
+        max: 40
+        step: 2
+	-
+		title: Heading 2 Size Preview
+		id: sphd-pre-fs-2
+		type: variable-number-slider
+        default: 30
+        format: px
+        min: 18
+        max: 40
+        step: 2
+	-
+		title: Heading 2 Size Editor
+		id: sphd-ed-fs-2
+		type: variable-number-slider
+        default: 28
+        format: px
+        min: 18
+        max: 40
+        step: 2
+	-
+		title: Heading 3 Size Preview
+		id: sphd-pre-fs-3
+		type: variable-number-slider
+        default: 26
+        format: px
+        min: 18
+        max: 40
+        step: 2
+	-
+		title: Heading 3 Size Editor
+		id: sphd-ed-fs-3
+		type: variable-number-slider
+        default: 24
+        format: px
+        min: 18
+        max: 40
+        step: 2
+	-
+		title: Heading 4 Size Preview
+		id: sphd-pre-fs-4
+		type: variable-number-slider
+        default: 24
+        format: px
+        min: 18
+        max: 40
+        step: 2
+	-
+		title: Heading 4 Size Editor
+		id: sphd-ed-fs-4
+		type: variable-number-slider
+        default: 22
+        format: px
+        min: 18
+        max: 40
+        step: 2
+	-
+		title: Heading 5 Size Preview
+		id: sphd-pre-fs-5
+		type: variable-number-slider
+        default: 20
+        format: px
+        min: 18
+        max: 40
+        step: 2
+	-
+		title: Heading 5 Size Editor
+		id: sphd-ed-fs-5
+		type: variable-number-slider
+        default: 20
+        format: px
+        min: 18
+        max: 40
+        step: 2	
+	-
+		title: Heading 6 Size Preview
+		id: sphd-pre-fs-6
+		type: variable-number-slider
+        default: 18
+        format: px
+        min: 18
+        max: 40
+        step: 2	
+	-
+		title: Heading 6 Size Editor
+		id: sphd-ed-fs-6
+		type: variable-number-slider
+        default: 18
+        format: px
+        min: 18
+        max: 40
+        step: 2
+	
+	-
+        title: Heading Colors
+        id: Spec-Colors-Head
+        type: heading
+        level: 4		
+	-
+		title: Heading 1 Color Preview
+		id: sphd-pre-1
+		type: variable-themed-color
+		format: hex
+		default-dark: '#683732'
+		default-light: '#683732'
+	-
+		title: Heading 1 Color Editor
+		id: sphd-ed-1
+		type: variable-themed-color
+		format: hex
+		default-dark: '#683732'
+		default-light: '#683732'
+	-
+		title: Heading 2 Color Preview
+		id: sphd-pre-2
+		type: variable-themed-color
+		format: hex
+		default-dark: '#a13531'
+		default-light: '#a13531'
+	-
+		title: Heading 2 Color Editor
+		id: sphd-ed-2
+		type: variable-themed-color
+		format: hex
+		default-dark: '#a13531'
+		default-light: '#a13531'
+	-
+		title: Heading 3 Color Preview
+		id: sphd-pre-3
+		type: variable-themed-color
+		format: hex
+		default-dark: '#fc4435'
+		default-light: '#fc4435'
+	-
+		title: Heading 3 Color Editor
+		id: sphd-ed-3
+		type: variable-themed-color
+		format: hex
+		default-dark: '#fc4435'
+		default-light: '#fc4435'
+	-
+		title: Heading 4 Color Preview
+		id: sphd-pre-4
+		type: variable-themed-color
+		format: hex
+		default-dark: '#ff6a79'
+		default-light: '#ff6a79'
+	-
+		title: Heading 4 Color Editor
+		id: sphd-ed-4
+		type: variable-themed-color
+		format: hex
+		default-dark: '#ff6a79'
+		default-light: '#ff6a79'
+	-
+		title: Heading 5 Color Preview
+		id: sphd-pre-5
+		type: variable-themed-color
+		format: hex
+		default-dark: '#ac7782'
+		default-light: '#ac7782'
+	-
+		title: Heading 5 Color Editor
+		id: sphd-ed-5
+		type: variable-themed-color
+		format: hex
+		default-dark: '#ac7782'
+		default-light: '#ac7782'
+	-
+		title: Heading 6 Color Preview
+		id: sphd-pre-6
+		type: variable-themed-color
+		format: hex
+		default-dark: '#d6b6bc'
+		default-light: '#d6b6bc'
+	-
+		title: Heading 6 Color Editor
+		id: sphd-ed-6
+		type: variable-themed-color
+		format: hex
+		default-dark: '#d6b6bc'
+		default-light: '#d6b6bc'
+    -
+        title: Workspace
+        id: WS-CSS
+        type: heading
+        level: 2
+    -
+        title: Hide Vault Name
+        id: v-non
+        type: class-toggle
+    -
+        title: Wrap Note Title
+        id: title-wrap
+        type: class-toggle
+    -
+        title: Resize Scrollbars
+        id: scroll-size
+        type: variable-number-slider
+        default: 7
+        format: px
+        min: 0
+        max: 15
+        step: 1
     -
         title: Workspace Colors
         id: Workspace-Colors
@@ -83,7 +481,7 @@ settings:
         default-light: '#dfe7ef'
     - 
         title: Sidebar
-        description: Change only sidebar, right settings pane, and inactive note title background color.
+        description: Change only sidebar, right settings pane, and inactive note title background colors.
         id: side-bar
         type: variable-themed-color
         format: hex
@@ -91,7 +489,7 @@ settings:
         default-light: '#f8fbff'
     - 
         title: Dark Sidebar
-        description: Left settings bar and pane separator color.
+        description: Left settings bar, <i></i> background, graph background, and pane separator colors.
         id: dark-sidebar
         type: variable-themed-color
         format: hex
@@ -103,34 +501,231 @@ settings:
         id: f-icon
         type: variable-themed-color
         format: hex
-        default-dark: '#aab3ca'
+        default-dark: '#586477'
         default-light: '#a6bbde'
     - 
         title: Folder
-        description: Folder icon color.
+        description: Closed folder icon color.
         id: folder
         type: variable-themed-color
         format: hex
-        default-dark: '#586477'
-        default-light: '#7e8ea3'
-
-
-
-
-
+        default-dark: '#e05858'
+        default-light: '#ce6d6d'
+    -
+        title: Sliding Panes Dropshadow
+        id: slide-shadow
+        type: variable-themed-color
+        format: rgb
+        opacity: true
+        default-dark: '#001c4a15'
+        default-light: '#001c4a15'
+    -
+        title: Note Elements
+        id: Other-Note
+        type: heading
+        level: 2
+    - 
+        title: Horizontal Line Symbol
+        description: Add quotations around symbol for it to work. For Example "⚡".
+        id: hr-sym
+        type: variable-text
+        default: '⚡'
+    -
+        title: No Horizontal Line Symbol
+        description: Hide the horizontal Line Symbol entirely
+        id: hr-tog
+        type: class-toggle
+    -
+        title: Header Tags Above Header
+        description: Move the editor header hastags # to above the header instead.
+        id: hash-top
+        type: class-toggle
+    -
+        title: Hide Header Underline
+        id: h-line
+        type: class-toggle
+    -
+        title: Hide Frontmatter 
+        id: no-m
+        type: class-toggle
+    - 
+        title: Centered Tables
+        description: Move all tables to the center of the page.
+        id: t-c
+        type: class-toggle
+    - 
+        title: Naked Embeds
+        description: Embeds that look like they're part of the note.
+        id: naked-em
+        type: class-toggle
+    -
+        title: Original Embeds
+        description: Previous style of embeds
+        id: org-em
+        type: class-toggle
+    -
+        title: Colors
+        id: Note-Element-Colors
+        type: heading
+        level: 3
+    - 
+        title: Embed/Blockquote
+        description: Embed/Blockquote color.
+        id: embed-bg
+        type: variable-themed-color
+        format: hex
+        default-dark: '#10161d'
+        default-light: '#f1f5ff'
+    - 
+        title: Code Background
+        id: code-bg
+        type: variable-themed-color
+        format: hex
+        default-dark: '#232831'
+        default-light: '#eef6ff'
+    - 
+        title: Horizontal Line
+        id: hr
+        type: variable-themed-color
+        format: hex
+        default-dark: '#3c5274'
+        default-light: '#d6deea'
+    -
+        title: Lists
+        id: Lists
+        type: heading
+        level: 2
+    - 
+        title: Default Bullet Disc Shape
+        id: def-bull
+        type: class-toggle
+    - 
+        title: Custom Bullet Shape
+        description: Toggle on if you want to use the bullet shape below.
+        id: no-bull
+        type: class-toggle
+    - 
+        title: Bullet Shape
+        description: Add quotes around your new bullet. For example "~"
+        id: bullet
+        type: variable-text
+        default: '⬥'
+    - 
+        title: Original Bullet Lines
+        description: Lines appear under bullet, not beside it. ⚠Causes scrolling glitches. Recommended this is turned off, but use if you wish.
+        id: b-li-o
+        type: class-toggle
+	-
+		title: Specific Lists
+		id: Bullet-Lists
+		type: heading
+		level: 4
+	-
+		title: Specific Line Size
+		id: b-line
+		type: variable-number-slider
+        default: 2
+        format: px
+        min: 1
+        max: 3
+        step: 1
+	-
+		title: Specific Line Color
+		id: Bullet-Line-Color
+		type: heading
+		level: 4
+	-
+		title: Toggle Colorful Bullet Line Color
+		description: Toggle on to use the colorful bullet lines
+		id: bul-li-col
+		type: class-toggle
+	-
+		title: Bullet Line 1 Color
+		id: b-l-1
+		type: variable-themed-color
+		format: hex
+		default-dark: '#683732'
+		default-light: '#683732'
+	-
+		title: Bullet Line 2 Color
+		id: b-l-2
+		type: variable-themed-color
+		format: hex
+		default-dark: '#a13531'
+		default-light: '#ff1702'
+	-
+		title: Bullet Line 3 Color
+		id: b-l-3
+		type: variable-themed-color
+		format: hex
+		default-dark: '#fc4435'
+		default-light: '#e27777'
+	-
+		title: Bullet Line 4 Color
+		id: b-l-4
+		type: variable-themed-color
+		format: hex
+		default-dark: '#ff6a79'
+		default-light: '#ff7482'
+	-
+		title: Bullet Line 5 Color
+		id: b-l-5
+		type: variable-themed-color
+		format: hex
+		default-dark: '#ac7782'
+		default-light: '#ad8f8f'
+	-
+		title: Bullet Line 6 Color
+		id: b-l-6
+		type: variable-themed-color
+		format: hex
+		default-dark: '#d6b6bc'
+		default-light: '#d6b6bc'
+    - 
+        title: Tags
+        id: Tags
+        type: heading
+        level: 2
+    -
+        title: Bubble Tags
+        id: tag-bubble
+        type: class-toggle
+    -
+        title: Notion Tags
+        id: tag-notion
+        type: class-toggle
+    -
+        title: Outline Tags
+        id: tag-outline
+        type: class-toggle
+    -
+        title: Tag Outline Border Size
+        id: tag-o
+        type: variable-number-slider
+        default: 1
+        format: px
+        min: 0
+        max: 5
+        step: 1
+    - 
+        title: Tag Color
+        id: tag
+        type: variable-themed-color
+        format: hex
+        default-dark: '#571a1a'
+        default-light: '#c65656'
     - 
         title: Other Colors
         id: Other-Colors
         type: heading
-        level: 3
-
+        level: 2
     - 
         title: Accent
         id: accent
         type: variable-themed-color
         format: hex
-        default-light: '#c14343'
         default-dark: '#883737'
+        default-light: '#c14343'
     - 
         title: Lite Accent
         description: Link hover, scrollbar active, tags, embed titles and links colors.
@@ -139,6 +734,14 @@ settings:
         format: hex
         default-dark: '#e06c75'
         default-light: '#a35158'
+    - 
+        title: Accent 2
+        description: Arrows, lines, even bullet list line colors.
+        id: accent2
+        type: variable-themed-color
+        format: hex
+        default-dark: '#3c5274'
+        default-light: '#d6deea'
     -
         title: Lite Accent 2
         description: Link color.
@@ -171,8 +774,22 @@ settings:
         format: hex
         default-dark: '#586477'
         default-light: '#a6bbde'
-
-
+    -
+        title: Background
+        description: Scrollbar color
+        id: bg
+        type: variable-themed-color
+        format: hex
+        default-dark: '#252c36'
+        default-light: '#dde4ef'
+    -
+        title: Lines
+        description: Explorer, heading, input box, settings, frontmatter, and mermaidjs lines
+        id: table
+        type: variable-themed-color
+        format: hex
+        default-dark: '#283846'
+        default-light: '#ccd6eb'
     -
         title: Highlights
         id: RGBA
@@ -181,31 +798,94 @@ settings:
     -
         title: Text Highlight
         description: Markdown highlight color.
-        id: text-hightlight-bg
+        id: text-highlight-bg
         type: variable-themed-color
         format: rgb
-        default-dark: '#c78181'
-        default-light: '#c78181'
+        opacity: true
+        default-dark: '#a83c3c40'
+        default-light: '#c7818140'
     -
         title: Search Highlight
         description: Search result highlight color.
         id: text-highlight-bg-active
         type: variable-themed-color
         format: rgb
-        default-dark: '#c78181'
-        default-light: '#c78181'
+        opacity: true
+        default-dark: '#fd737340'
+        default-light: '#fd737340'
     -
-
-        title: Other
-        id: Other
+        title: Search 2
+        description: Search match highlight and background transparent color for settings.
+        id: background-modifier-form-field-highlighted
+        type: variable-themed-color
+        format: rgb
+        opacity: true
+        default-dark: '#347bed22'
+        default-light: '#f0838322'
+    -
+        title: Text Selection
+        description: Cursor dragged highlights
+        id: text-selection
+        type: variable-themed-color
+        format: rgb
+        opacity: true
+        default-dark: '#4d171746'
+        default-light: '#e5959537'
+    -
+        title: Graph Colors
+        id: Graph
+        type: heading
+        level: 3
+    - 
+        title: Graph Background
+        id: graph-bg
+        type: variable-themed-color
+        format: hex
+        default-dark: '#10151B'
+        default-light: '#f8fbff'
+    - 
+        title: Graph Lines
+        id: graph-lines
+        type: variable-themed-color
+        format: hex
+        default-dark: '#571a1a'
+        default-light: '#e4e7f8'
+    - 
+        title: Graph Node
+        id: graph-node
+        type: variable-themed-color
+        format: hex
+        default-dark: '#cfd7dd'
+        default-light: '#c14343'
+    -
+        title: Graph Attachment
+        id: graph-img
+        type: variable-themed-color
+        format: hex
+        default-dark: '#4c78cc'
+        default-light: '#4c78cc'
+    -
+        title: Graph Tags
+        id: graph-tag
+        type: variable-themed-color
+        format: hex
+        default-dark: '#c14343'
+        default-light: '#000000'
+    -
+        title: Plugins
+        id: Plugins
         type: heading
         level: 2
+    -
+        title: Hide Text Expander
+        description: Hide text expander code block from preview
+        id: hide-expand
+        type: class-toggle
     - 
-        title: Horizontal Line Symbol
-        description: Add quotations around symbol for it to work. For Example "⚡".
-        id: hr-sym
-        type: variable-text
-        default: '⚡'
+        title: Dataview Adjustments
+        description: Personal adjustments to some elements of dataview
+        id: dv
+        type: class-toggle
 */
 
 
@@ -216,6 +896,8 @@ settings:
     --reveal-font: var(--default-font); /*??*/
     --font-monospace: 'Fira Code Medium', /*'JetBrains Mono Medium', 'Recursive Mono Casual Static Medium', 'Menlo Bold',*/ 'Source Code Pro', monospace; /*Code block text*/
     --font: 'Calisto MT', 'Palatino Black', 'Book Antiqua', 'Georgia', 'Suez One', serif; /*Works, but if it doesn't, needs !important*/
+    --pre-font: var(--default-font) !important;
+    --ed-font: var(--default-font) !important;
 }
 
 .workspace {
@@ -233,12 +915,55 @@ settings:
     --med-tall: 600px;
     --tall: 700px;
     
+    /*Colors*/
     --slide-shadow: rgba(0, 28, 74, 0.15);
+    --text-dl: #e5ebee;
     
+    /*Sizes*/
+    --scroll-size: 7px;
+    --lh: 1.5em;
+    --f-s-pre: 1em;
+    --f-s-text: 1em;
+    --f-s-h: 34px;
+    --f-w-h: 600;
+    --h-line: 100%;
+    --head-h: 15px;
     
+    /*Other*/
     --hr-sym: "⚡";
-}
+    --tag-o: 1px;
+    --bullet: "⬥";
+    --b-line: 2px;
 
+    /*--Specific--*/
+    /*Fonts*/
+    --sphd-pre-ff-1: 'Calisto MT', 'Palatino Black', 'Suez One', serif;
+    --sphd-pre-ff-2: 'Calisto MT', 'Palatino Black', 'Suez One', serif;
+    --sphd-pre-ff-3: 'Calisto MT', 'Palatino Black', 'Suez One', serif;
+    --sphd-pre-ff-4: 'Calisto MT', 'Palatino Black', 'Suez One', serif;
+    --sphd-pre-ff-5: 'Calisto MT', 'Palatino Black', 'Suez One', serif;
+    --sphd-pre-ff-6: 'Calisto MT', 'Palatino Black', 'Suez One', serif;
+    --sphd-ed-ff-1: 'Calisto MT', 'Palatino Black', 'Suez One', serif;
+    --sphd-ed-ff-2: 'Calisto MT', 'Palatino Black', 'Suez One', serif;
+    --sphd-ed-ff-3: 'Calisto MT', 'Palatino Black', 'Suez One', serif;
+    --sphd-ed-ff-4: 'Calisto MT', 'Palatino Black', 'Suez One', serif;
+    --sphd-ed-ff-5: 'Calisto MT', 'Palatino Black', 'Suez One', serif;
+    --sphd-ed-ff-6: 'Calisto MT', 'Palatino Black', 'Suez One', serif;
+
+    /*Size*/
+    --sphd-pre-fs-1: 34px;
+    --sphd-pre-fs-2: 30px;
+    --sphd-pre-fs-3: 26px;
+    --sphd-pre-fs-4: 24px;
+    --sphd-pre-fs-5: 20px;
+    --sphd-pre-fs-6: 18px;
+    --sphd-ed-fs-1: 34px;
+    --sphd-ed-fs-2: 28px;
+    --sphd-ed-fs-3: 24px;
+    --sphd-ed-fs-4: 22px;
+    --sphd-ed-fs-5: 20px;
+    --sphd-ed-fs-6: 18px;
+}
 
 .theme-dark {
     --background-primary: var(--note); /*Note background*/
@@ -267,14 +992,14 @@ settings:
     --text-error-hover: #990000; /*??*/
     
     --text-highlight-bg: rgba(168, 60, 60, 0.4); /*Text highlights*/
-    --text-highlight-bg-active: rgba(255, 128, 0, 0.4); /*??*/
-    --text-selection: rgba(77, 23, 23, 0.46); /*Cursor dragged highlights*/
+    --text-highlight-bg-active: rgba(253, 115, 115, 0.4); /*Searched Result Highlight*/
+    --text-selection: rgba(122, 20, 20, 0.4); /*Cursor dragged highlights*/
     
     --interactive-normal: #652121; /*Button Color*/
     --interactive-hover: var(--embed-bg);/*Button Color*/
     --interactive-accent: var(--accent); /*Workspace Note Title Underline*/
     --interactive-accent-rgb: 52, 123, 237; /*Publish item select*/
-    --interactive-accent-hover: #862f35; /*Menu Button Hover*/
+    --interactive-accent-hover: var(--accent); /*Menu Button Hover*/
     --interactive-success: #197300; /*??*/
     
     --scrollbar-bg: rgba(255, 255, 255, 0.05);
@@ -293,15 +1018,16 @@ settings:
     --bg: #252c36;
     --fg: #cfd7dd;
     --side-bar: var(--note);
-    --outer-bar: #0e0f15;
+    --outer-bar: #0b0f13 /*#0e0f15*/;
     --dark-sidebar: #10161d;
     --inactive: #586477;
+    --outline: var(--outer-bar);
     
     --folder: #e05858;
     --file: #aab3ca;
     --f-icon: var(--inactive);
     --f-hover: var(--accent);
-    --lines: var(--accent2)/*#465164*/;
+    --lines: var(--hr)/*#465164*/;
         
     --note: #1a1e24 /*#0d131c*/;
     --text: #bccad8 /*#dcddde*/;
@@ -309,11 +1035,11 @@ settings:
     --soft-text: #aab3ca/*#d04e4e*/;
     --code-bg: #232831;
     --code-text: #fa4545;
-    --embed-bg: #111417;
+    --embed-bg: var(--dark-sidebar) /*#111417*/;
     --footnote: #6e7e89;
     
     --th: var(--dark-accent);
-    --td: #030a1495;
+    --td: #030a1460;
     
     --hvr: var(--text-highlight-bg);
     --hvr2: var(--text-selection);
@@ -323,13 +1049,35 @@ settings:
     --hr: #3c5274;
     --i-at: #bf5e5e;
     
-    --graph-bg: var(--dark-sidebar);
+    --graph-bg: var(--outer-bar);
     --graph-lines: var(--dark-accent);
     --graph-node: var(--fg);
     --graph-fill: var(--headers);
     --graph-404: #727e93;
     --graph-img: #4c78cc /*#ff86be*/;
     --graph-tag: var(--headers);
+
+
+    /*CSS Specifics*/
+    --b-l-1: #683732;
+    --b-l-2: #a13531;
+    --b-l-3: #fc4435;
+    --b-l-4: #ff6a79;
+    --b-l-5: #ac7782;
+    --b-l-6: #d6b6bc;
+
+    --sphd-pre-1: #683732;
+    --sphd-pre-2: #a13531;
+    --sphd-pre-3: #fc4435;
+    --sphd-pre-4: #ff6a79;
+    --sphd-pre-5: #ac7782;
+    --sphd-pre-6: #d6b6bc;
+    --sphd-ed-1: #683732;
+    --sphd-ed-2: #a13531;
+    --sphd-ed-3: #fc4435;
+    --sphd-ed-4: #ff6a79;
+    --sphd-ed-5: #ac7782;
+    --sphd-ed-6: #d6b6bc;
 }
 
 .theme-light {
@@ -358,13 +1106,13 @@ settings:
     --text-error: #ff3333; /*??*/
     --text-error-hover: #990000; /*??*/
     
-    --text-highlight-bg: rgba(199, 129, 129, 0.4); /*Text highlights*/
+    --text-highlight-bg: rgba(255, 185, 185, 0.4); /*Text highlights*/
     --text-highlight-bg-active: rgba(253, 115, 115, 0.4); /*Search Highlight*/
     --text-selection: rgba(229, 149, 149, 0.37); /*Cursor dragged highlights*/
     
     --interactive-normal: var(--outer-bar); /*Button background Color*/
     --interactive-hover: var(--embed-bg)/*#5d2b2b*/; /*Button hover text*/
-    --interactive-accent: var(--accent); /*Workspace Note Title Underline*/
+    --interactive-accent: var(--headers); /*Workspace Note Title Underline*/
     --interactive-accent-rgb: 52, 123, 237; /*Publish item select, Resize Handle*/
     --interactive-accent-hover: var(--lite-accent); /*Menu Button Hover*/
     --interactive-success: #197300; /*??*/
@@ -379,33 +1127,38 @@ settings:
     --deep-dark-accent: #2f1010;
     --dark-accent: #ffeded;
     --lite-accent: #a35158;
-    --accent: #c14343;
+    --accent: #912e2e;
     --accent2: var(--hr)/*#4c78cc*/;
     --accent2-lite: #5599d0;
     --bg: #dde4ef;
-    --fg: #9f0202;
+    --fg: var(--accent) /*#9f0202*/;
     --side-bar: var(--note);
-    --outer-bar: #dfe7ef;
-    --dark-sidebar: var(--embed-bg);
+    --outer-bar: #eef3fd;
+    --dark-sidebar: #f1f5ff;
     --inactive: #a6bbde /*#91a3c1*/;
+    --outline: var(--bg);
     
     --folder: #ce6d6d;
     --file: #7e8ea3;
     --f-icon: var(--inactive);
-    --f-hover: #912e2e;
+    --f-hover: var(--accent);
     --lines: #b5c2d8;
     
     --headers: #c14343;
     --note: #f8fbff;
     --text: #697580;
     --soft-text: #d04e4e;
-    --code-bg: #eef6ff;
+    --code-bg: var(--embed-bg) /*#eef6ff*/;
     --code-text: #ea4262;
-    --embed-bg: #f1f5ff /*#ebf1f8*/;
+    --embed-bg: var(--dark-sidebar) /*#ebf1f8*/;
     --footnote: #8996a0;
     
-    --th: #c14343;
+    --th: var(--headers);
     --td: #d0ddef62;
+    
+    --highlight-md: rgba(199, 129, 129, 0.4);
+    --highlight-s: rgba(253, 115, 115, 0.4);
+    --highlight-c: rgba(229, 149, 149, 0.37);
     
     --hvr: var(--text-highlight-bg);
     --hvr2: var(--text-selection);
@@ -421,38 +1174,76 @@ settings:
     --graph-fill: #2e5db2;
     --graph-404: #727e93;
     --graph-img: #4c78cc /*#5469de*/;
-    --graph-tag: #000000;    
+    --graph-tag: #000000; 
+    
+    
+    /*CSS Specifics*/
+    --b-l-1: #683732;
+    --b-l-2: #ff1702;
+    --b-l-3: #e27777;
+    --b-l-4: #ff7482;
+    --b-l-5: #ad8f8f;
+    --b-l-6: #d6b6bc;
+
+    --sphd-pre-1: #683732;
+    --sphd-pre-2: #ff1702;
+    --sphd-pre-3: #e27777;
+    --sphd-pre-4: #ff7482;
+    --sphd-pre-5: #ad8f8f;
+    --sphd-pre-6: #d6b6bc;
+    --sphd-ed-1: #683732;
+    --sphd-ed-2: #ff1702;
+    --sphd-ed-3: #e27777;
+    --sphd-ed-4: #ff7482;
+    --sphd-ed-5: #ad8f8f;
+    --sphd-ed-6: #d6b6bc;
 }
 
 
 /*--WORKSPACE--*/
 /*Obsidian Title Bar Cover*/
-.titlebar {
-    background-color: var(--background-modifier-cover);
-}
+.titlebar { background-color: var(--background-modifier-cover); }
+.titlebar-text{ color: var(--text-dl) !important; }
+
 /*Exit Button*/
 .titlebar-button:hover {
-    color: var(--fg);
+    color: var(--text-dl);
 }
 
+/*Drop Menu*/
+.menu {
+    border-radius: var(--radius) !important;
+}
+.menu-item:hover {
+    background-color: var(--outer-bar);
+}
 
 /*Ribbon Icons*/
-.side-dock-ribbon-tab, .side-dock-ribbon-action, .workspace-tab-header-inner-icon{
+.side-dock-ribbon-tab, .side-dock-ribbon-action, .workspace-tab-header-inner-icon {
     color: var(--soft-text);
     text-align: center;
     cursor: pointer;
     stroke-width: 2px;
 }
+.side-dock-settings {
+    margin-bottom: 1em;
+}
+
+.workspace-split.mod-left-split .workspace-tabs .workspace-leaf,
+.workspace-split.mod-right-split .workspace-tabs .workspace-leaf {
+    border-radius: var(--radius);
+}
+
 
 /*Buttons*/
 .nav-action-button.is-active {
-    background-color: var(--dark-accent);
-    color: var(--soft-text);
+    background-color: var(--th);
+    color: var(--text-dl);
 }
 /*Button Hover Color*/
 .modal button:not(.mod-cta):not(.mod-warning):hover, button:hover, button.mod-cta:hover {
-    background-color: var(--dark-accent) !important;
-    color: white;
+    background-color: var(--interactive-accent-hover) !important;
+    color: var(--text-dl);
 }
 
 button, button.mod-cta {
@@ -468,6 +1259,9 @@ button, button.mod-cta {
 .workspace-leaf-resize-handle {
     background-color: var(--dark-sidebar);
     transition: background-color 200ms ease-in-out;
+}
+.workspace-leaf-resize-handle:hover {
+    background-color: var(--accent);
 }
 
 
@@ -511,11 +1305,12 @@ button, button.mod-cta {
     font-family: var(--font);
     font-size: 24px;
     /*border-bottom: 3px solid var(--accent);*/
-    padding-left: 1.5% !important;
+    padding-left: .2em !important;
     /*position: fixed;
     top: 1.5em;
     background-color: var(--side-bar);
     padding-top: .7em;*/
+    display: block;
 }
 
 /*Nav Folder/File Icons*/
@@ -524,7 +1319,7 @@ button, button.mod-cta {
     color: transparent;
     text-shadow: 0 0 0 var(--folder);
     margin-right: 4px;
-    font-size: 13px;
+    font-size: .9em;
     
 }
 .nav-folder-children .nav-file-title-content::before {
@@ -532,7 +1327,7 @@ button, button.mod-cta {
     color: transparent;
     text-shadow: 0 0 0 var(--file);
     margin-right: 5px;
-    font-size: 12px;
+    font-size: .85em;
 }
 
 /*Inactive Folder Color*/
@@ -542,12 +1337,18 @@ button, button.mod-cta {
 
 /*Nav Folder Lines*/
 .nav-folder, .nav-file {
-    margin: -2px !important;
+    margin: 0 -2px;
+    margin-right: 0px;
     border-left: 2px solid var(--table);
 }
 /*Align Folder Line*/
 .nav-folder-children {
     padding-left: 18px;
+}
+/*Nav Hover Line Colors*/
+.nav-folder:hover,
+.nav-file:hover {
+    border-color: var(--accent);
 }
 
 /*Text wrap*/
@@ -555,6 +1356,7 @@ button, button.mod-cta {
     white-space: normal;
     width: auto;
     border-radius: var(--radius);
+    border: 0;
 }
 
 /*Folder Bold*/
@@ -590,9 +1392,10 @@ button, button.mod-cta {
     color: var(--fg);
 }
 
-/**/
+/*Dragged*/
 .nav-folder-title.is-being-dragged-over {
     border:none;
+    border-radius: var(--radius);
 }
 
 /*Arrows*/
@@ -627,35 +1430,68 @@ button, button.mod-cta {
 
 
 /*Tag Pane Lines*/
-/* Works but Dot appears*/
 .tag-container .tree-item-children {
     margin-left: 4%;
     border-left: 1px solid var(--lines);
+    border-bottom: 1px solid var(--note);  /*Removes Dot!!*/
     transition: all 0.5s ease-in-out;
+    padding: 0;
 }
 
 .tag-container .tree-item-children:hover {
-    border-left: 2px solid var(--lines);
+    border-left: 1px solid var(--accent);
 }
 
-/*Outline Pane Lines*/
-.outline .tree-item-children {
-    margin-left: 3.9%;
-    border-left: 1px solid var(--lines);
-    transition: all 0.5s ease-in-out;
-    border-radius: var(--radius);
-    padding-left: 0px;
+/*Add # For Tag Pane*/
+/*From California Coast.*/
+.tag-pane-tag-text:before {
+    content: "#";
+    padding-right: 1.3em;
+    position: relative;
+    margin: -1em;
+    color: var(--headers);
 }
-.outline .tree-item-text:hover {
-    border-left-color: var(--accent);
+.collapse-icon + .tree-item-inner > .tag-pane-tag-text:before {
+    content: none;
 }
+
+
+/*Outline*/
 /*Set Outline Padding*/
 .outline {
-    padding: 20px 10px !important;
-    overflow: hidden;
+    margin: .2em .5em;
+    user-select: text;
+}
+/*Outline Pane Lines*/
+.outline .tree-item-children {
+    margin-left: .7em;
+    border-left: 1px solid var(--lines);
+    transition: all 0.3s ease-in-out;
+    padding: 0;
+}
+.outline .tree-item-children:hover {
+    border-color: var(--headers);
+    border-radius: var(--radius);
+}
+/*
+.outline .tree-item-self .collapse-icon:before {
+    content: "H";
+    color: var(--table);
+}
+.outline .tree-item-self:hover .collapse-icon:before {
+    content: none;
+    color: var(--accent);
 }
 
-
+.outline .tree-item-self {
+    padding-left: .3em;
+}
+.outline .tree-item-self:before {
+    content: "H";
+    color: var(--table);
+    padding-right: .3em;
+}
+*/
 
 /*--Search--*/
 /*Highlight Search Result*/
@@ -694,7 +1530,7 @@ input[type='number']:hover {
 
 .document-search-button:hover {
     background-color: var(--interactive-accent);
-    color: white;
+    color: var(--text-dl);
 }
 
 
@@ -709,6 +1545,9 @@ input[type='number']:hover {
     background-color: var(--side-bar);
     border: 1px solid var(--background-modifier-border);
     border-radius: var(--radius);
+}
+.graph-controls .setting-item-name {
+    color: var(--text);
 }
 
 /*Arrows*/
@@ -753,9 +1592,10 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 /*Undo b quote formatting*/
+.setting-item-description b,
 b.u-pop {
     font-weight: 900;
-    color: var(--folder) !important;
+    color: var(--headers) !important;
     display: inline-block;
     margin: 0;
     border: 0;
@@ -763,12 +1603,26 @@ b.u-pop {
     background: transparent;
 }
 
+.setting-item ul li::before {
+    position: relative;
+    margin-right: .5em;
+}
+.setting-item li {
+}
+
+/*Setting Item Title*/
+.setting-item-name {
+    font-weight: 900;
+    font-size: 1.1em;
+}
+.setting-item-description {
+    color: var(--footnote);
+}
 
 /*Setting Item Padding Reduction*/
 .setting-item {
     padding: 1% 0 1% 0;
 }
-
 
 /*Settings Right*/
 .modal.mod-settings .vertical-tab-content-container {
@@ -789,7 +1643,7 @@ b.u-pop {
     background-color: var(--dark-sidebar);
     padding: 10px 6px 10px 24px;
     cursor: default;
-    font-size: 16px;
+    font-size: 1em;
 }
 /*Selected Item*/
 .horizontal-tab-nav-item.is-active, .vertical-tab-nav-item.is-active {
@@ -818,14 +1672,17 @@ b.u-pop {
     color: var(--soft-text);
 }
 
-
+/*Sync Image Fit*/
+.sync-history-content-container {
+    overflow: auto;
+}
 
 /*--Publish Settings--*/
 .modal-bg {
     background-color: var(--background-modifier-form-field-highlighted);
 }
 .list-item-part mod-extended publish-upload-item-title {
-    color: white;
+    color: var(--text-dl);
 }
 
 /*Published flair*/
@@ -861,7 +1718,7 @@ b.u-pop {
     color: var(--graph-fill); /*Circle color*/
 }
 .graph-view.color-circle {
-    color: white; /*Outline color*/
+    color: var(--text-dl); /*Outline color*/
 }
 
 .graph-view.color-line-highlight {
@@ -899,12 +1756,18 @@ b.u-pop {
 }
 
 /*--Bottom Bar--*/
-.status-bar {
+.app-container .status-bar {
+    display: unset;
+    position: absolute;
     background-color: var(--outer-bar);
-    border-top: 1px solid var(--background-modifier-border);
     color: var(--text-muted);
+    bottom: 0;
+    right: 0;
+    padding: 0 .1em;
+    border-left: 1px solid var(--th);
+    border-top: 1px solid var(--th);
+    box-shadow: 2px 1px 20px var(--outer-bar);
 }
-
 
 
 /*--Scrollbars--*/
@@ -912,6 +1775,7 @@ b.u-pop {
 ::-webkit-scrollbar-thumb {
     background-color: var(--accent);
     -webkit-border-radius: var(--radius); /*Remove Rounding*/
+    
 }
 ::-webkit-scrollbar-thumb:active {
     background-color: var(--lite-accent);
@@ -920,6 +1784,8 @@ b.u-pop {
 ::-webkit-scrollbar {
     background-color: var(--bg);
     -webkit-border-radius: var(--radius); /*Remove Rounding*/
+    width: var(--scroll-size);
+    height: var(--scroll-size);
 }
 
 
@@ -938,6 +1804,13 @@ b.u-pop {
     color: var(--soft-text);
 }
 
+/*Center Note Icons*/
+.view-header-icon, .view-actions{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 
 
@@ -948,28 +1821,94 @@ body {
     text-rendering: optimizeLegibility;
     font-family: var(--default-font);
     line-height: 1.5em;
-    font-size: 16px;
+    font-size: 1em;
     background-color: var(--background-primary);
     color: var(--text-normal);
-    z-index: 1;
+}
+/*Editor Resize*/
+.markdown-source-view.mod-cm5 {
+    padding-left: 0;
+    padding-right: .5em;
+}
+/*Editor Line Numbers*/
+.CodeMirror-gutter, .CodeMirror-gutters, .CodeMirror-linenumber{
+    box-sizing: content-box;
+    font-family: var(--font-monospace);
+    text-align: right;
 }
 
-.justified p {
-    text-align: justify;
+
+/*Note Text Adjustments*/
+.cm-s-obsidian .HyperMD-list-line, p, li, .cm-s-obsidian .CodeMirror-line {
+    line-height: var(--lh);
+    min-height: 0;
+    font-size: var(--f-s-text);
+    z-index: 0;
+}
+/*Fix Cursor Highlight*/
+.CodeMirror-selected {
+    z-index: 3;
+}
+.CodeMirror .CodeMirror-line,
+.CodeMirror .CodeMirror-line-like {
+    z-index: 0;
+}
+/*?*/
+p, li, table {
+    font-size: var(--f-s-pre);
+}
+p > .modal.mod-settings .modal-content, .setting-item-description p {
+    font-size: 16px !important;
 }
 
 
 /*--Headings--*/
 h1, h2, h3, h4, h5, h6, .cm-s-obsidian .cm-header {
-    font-weight: 600;
-    font-family: var(--font) !important;
+    font-weight: var(--f-w-h);
+    font-family: var(--font);
     color: var(--headers);
 }
+
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+    margin-bottom: calc(var(--head-h) - 1.5em) !important;
+}
+
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+    margin: var(--head-h) 0 !important;
+    line-height: calc(var(--lh) - .3em) !important;
+}
+
+/*Font Sizes*/
+.markdown-preview-view h1,
+.cm-s-obsidian .cm-header-1 { font-size: var(--f-s-h); }
+.markdown-preview-view h2 { font-size: calc(var(--f-s-h) - 4px); }
+.cm-s-obsidian .cm-header-2 { font-size: calc(var(--f-s-h) - 6px); }
+.markdown-preview-view h3 { font-size: calc(var(--f-s-h) - 8px); }
+.cm-s-obsidian .cm-header-3 { font-size: calc(var(--f-s-h) - 10px); }
+.markdown-preview-view h4 { font-size: calc(var(--f-s-h) - 10px); }
+.cm-s-obsidian .cm-header-4 { font-size: calc(var(--f-s-h) - 12px); }
+.markdown-preview-view h5,
+.cm-s-obsidian .cm-header-5 { font-size: calc(var(--f-s-h) - 14px); }
+.markdown-preview-view h6,
+.cm-s-obsidian .cm-header-6 { font-size: calc(var(--f-s-h) - 16px); }
+
 
 /*Editor Heading Re-size*/
 /*Inspired by Red Graphite*/
 .cm-s-obsidian pre.HyperMD-header > span > span:first-child {
     font-size: 10px;
+    color: var(--lines);
 }
 
 /*Heading Line*/
@@ -1009,6 +1948,7 @@ h4:after {
     left: 0;
 }
 
+
 /*Editor Heading Lines*/
 .cm-s-obsidian pre.HyperMD-header:after {
     content: "";
@@ -1020,34 +1960,99 @@ h4:after {
 }
 
 /*-Code-*/
-.markdown-preview-view code, .markdown-preview-view pre {
+.markdown-preview-view code,
+.markdown-preview-view pre {
     color: var(--code-text);
     font-family: var(--font-monospace) !important;
+    z-index: 0;
     background-color: var(--code-bg);
-    z-index: 1; /*Lets the highlight appear on top*/
     line-height: 1.4em;
     border-radius: var(--radius);
     font-size: 14px;
 }
 
-.markdown-preview-view pre[class*="language-"], .markdown-preview-view code[class*="language-"] {
+.markdown-preview-view pre[class*="language-"],
+.markdown-preview-view code[class*="language-"] {
     background: var(--code-bg);
     line-height: 1.4em;
     display: block;
     white-space: pre-wrap !important;
     font-family: var(--font-monospace) !important;
+    color: var(--text);
+    border-radius: var(--radius);
+    z-index: 0;
+}
+/*Apply Dropshadow*/
+.markdown-preview-view pre,
+.markdown-preview-view pre[class*="language-"],
+.markdown-preview-view code,
+.cm-s-obsidian pre.HyperMD-codeblock,
+.cm-s-obsidian span.cm-inline-code {
+    box-shadow: 0 .2em #00000010;
+}
+
+.markdown-preview-view pre,
+.markdown-preview-view pre[class*="language-"],
+.markdown-preview-view code {
+    border: 1px solid var(--td);
+}
+
+/*Hide box shadow inside codeblock*/
+.markdown-preview-view pre > code {
+    box-shadow: none;
 }
 
 /*Editor Code*/
-.cm-s-obsidian pre.HyperMD-codeblock, .cm-s-obsidian span.cm-inline-code, .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight) {
+.cm-s-obsidian pre.HyperMD-codeblock,
+.cm-s-obsidian span.cm-inline-code,
+.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight) {
     background-color: var(--code-bg);
     color: var(--code-text);
-    z-index: 0;
     font-family: var(--font-monospace);
     font-size: 14px;
+    z-index: 0;
 }
 
 
+/*Hide weird Tokening BG Coloring*/
+.token.operator {
+    color: var(--headers) !important;
+    background: transparent !important;
+}
+
+
+
+/*--Latex Math--*/
+.MJX-TEX { 
+    font-size: 130%;
+    color: var(--lite-accent);
+}
+/*Math Block Margin Reduction*/
+mjx-container[jax="CHTML"][display="true"] {
+    margin: 3% 0 !important;
+}
+/*Math Editor $$ and Text*/
+.cm-s-obsidian span.cm-math, .cm-s-obsidian span.hmd-fold-math-placeholder {
+    color: var(--accent2-lite);
+    font-style: normal;
+}
+/*Math Editor Text*/
+.cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end){
+    color: var(--headers);
+}
+
+/*Emphasis/Italic*/
+em {
+
+}
+
+/*Strong/Bold*/
+strong {
+
+}
+s {
+    
+}
 
 /*--Links--*/
 /*Active Link*/
@@ -1100,7 +2105,7 @@ a:hover {
 }*/
 /*Link in parentheses*/
 .cm-s-obsidian span.cm-url {
-    color: var(--folder);
+    color: var(--headers);
     text-decoration: none;
 }
 /*Link Hover Color*/
@@ -1111,14 +2116,19 @@ a:hover {
 
 /*--Horizontal Linebreak, HR--*/ 
 .markdown-preview-view hr, .HyperMD-hr-bg {
-    height: 0; /*Center Line Vertically*/
+    height: 0;
     border: 1px solid var(--hr);
-    /*margin-top: 17px;
-    margin-bottom: 20px;*/
+    
+}
+.HyperMD-hr-bg {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
+
 /*Stylized hr Line*/
-.markdown-preview-view hr::after, div:not(.CodeMirror-activeline)>.HyperMD-hr-bg::after {
+.markdown-preview-view hr::after, 
+div:not(.CodeMirror-activeline)>.HyperMD-hr-bg::after {
     content: var(--hr-sym);
     display: inline-block;
     position: absolute;
@@ -1128,7 +2138,7 @@ a:hover {
     transform-origin: 50% 50%;
     color: transparent;
     text-shadow: 0 0 0 var(--headers);
-    padding: 5px; /*Symbol Padding*/
+    padding: 0 .2em; /*Symbol Padding*/
     background-color: var(--background-primary); /*Color bg to cover line*/
 }
 
@@ -1147,10 +2157,10 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr {
     margin-block-start: 10px;
     margin-block-end: 10px;
 }   
-/*Hide Collapsed Header Line*/
-.CodeMirror-activeline-background {
-    display:none;
-}
+/*Hide Collapsed Header Line
+.CodeMirror-linebackground {
+    margin-bottom: 2em;
+}*/
 
 
 /*--Images--*/
@@ -1209,7 +2219,7 @@ Masonry/Gallery View
 /*--List--*/
 /*Colored List Markers*/
 li::marker{
-    color: var(--accent);
+    color: transparent;
 }
 /*Lighten Numbered List Marker Color*/
 ol > li::marker {
@@ -1218,22 +2228,26 @@ ol > li::marker {
 
 /*Bullet Shape*/
 ul:nth-child(odd), ul:nth-child(even) {
-    list-style-type: none;
+    list-style-type: "";
 }
 
 ul li::before {
-    content: "⬥ ";
-    margin-left: -24px;
+    content: var(--bullet);
+    margin-left: -22px;
     color: var(--accent);
     position: absolute;
     margin-top: auto;
     margin-bottom: auto;
+    font-size: 16px;
 }
 li.task-list-item::before {
     visibility: collapse;
 }
 ol li::before {
     visibility: collapse;
+}
+ol ul li::before {
+    visibility: visible;
 }
 
 /*Smaller Indentation*/
@@ -1244,11 +2258,21 @@ ul, ol {
 .markdown-preview-view ol > li.task-list-item {
     padding-left: 10px;
 }
-/*-Bullet Points-*/
 
+
+/*Fix breaking when Space in between Lists*/
+ul li.task-list-item > p {
+    margin-block-end: unset;
+    margin-left: -1.3em;
+}
+ul li > p {
+    margin-block-end: unset;
+}
+
+/*-Bullet Points-*/
 /*Editor Bullet Points*/
 .cm-s-obsidian span.cm-formatting-list-ul:before {
-    content: "⬥";
+    content: var(--bullet);
     margin-right: -10px;
 }
 
@@ -1273,51 +2297,31 @@ ul, ol {
 /*Bullet Line New*/
 li {
     padding-left: 4px;
-    border-left: 2px solid var(--accent);
+    border-left: var(--b-line) solid var(--accent);
+    line-height: var(--lh);
 }
 
 li:nth-child(even) {
-    border-left: 2px solid var(--accent2);
+    border-left: var(--b-line) solid var(--accent2);
 }
 
 .markdown-preview-view ul > li.task-list-item {
-    text-indent: -20px !important;
+    text-indent: -1.3em;
 }
 
-
-/*Bullet Line Original**
-ul ul, ol {
-    position: relative;
-}
-ul ul::before, ol ol::before {
-    content:'';
-    border-left: 2px solid var(--accent);
-    position: absolute;
-}
-ul ul::before, ol ol::before {
-    left: -12px;
-    top: 0;
-    bottom: 0; 
-}
-ol::before { left: -15px; }
-
-.markdown-preview-view .task-list-item-checkbox {
-    margin-left: 1% !important;
-    margin-right: .5% !important;
-}
-.markdown-preview-view .list-collapse-indicator {
-    padding-left: 12px !important;
-}
 
 /*List Arrows*/
 .markdown-preview-view .list-collapse-indicator {
     padding-left: 7em;
+    color: var(--soft-text);
+    position: absolute;
 }
 .markdown-preview-view .task-list-item .list-collapse-indicator {
     padding-left: 10px;
+    position: relative;
 }
 
-/*Checkboxes*/
+/*--Checkboxes--*/
 .markdown-preview-view .task-list-item-checkbox {
     -webkit-appearance: none;
     box-sizing: border-box;
@@ -1328,7 +2332,7 @@ ol::before { left: -15px; }
     height: 14px;
     filter: none;
     margin-left: -4px;
-    margin-right: 1.5%;
+    margin-right: .7em;
     margin-top: 3px;
     cursor: pointer;
     vertical-align: top;
@@ -1347,11 +2351,38 @@ ol::before { left: -15px; }
     color: var(--lines);
     font-weight: bold;
 }
-
 li.task-list-item.is-checked > a,
 li.task-list-item.is-checked > code {
     opacity: 65%;
 }
+/*Uncheck Subchecklists*/
+/*Thanks @foreveryone*/
+li.task-list-item.is-checked li:not(.is-checked) {
+    font-weight: initial; 
+    color: var(--text)
+}
+/*Different Checked Box*/
+[data-checklist="-"] > input[type=checkbox]:checked {
+    background-color: var(--table) !important;   
+}
+[data-checklist="-"] > input[type=checkbox]:checked::before {
+    content: "-";
+    font-size: 12px;
+    color: var(--soft-text);
+    padding-left: .4em;
+}
+
+[data-checklist=">"] > input[type=checkbox]:checked {
+    background-color: var(--accent2) !important;
+}
+[data-checklist=">"] > input[type=checkbox]:checked::before {
+    content: "▶";
+    font-size: 11px;
+    color: var(--soft-text);
+    padding-left: .2em;
+    font-weight: 900;
+}
+
 
 /*Table Checkboxes*/
 input[type="checkbox" i] {
@@ -1412,6 +2443,28 @@ input[type="checkbox checked"] {
     background-color: var(--td);
     border: 0;
 }
+.markdown-preview-sizer {
+    min-height: auto !important;
+}
+/*Flush Table Embed of Blockquotes*/
+.table .markdown-embed-content > .markdown-preview-view blockquote {
+    margin: 0;
+    overflow: hidden !important;
+}
+
+/*Bolded Right Side Table*/
+.table td:nth-child(1) {
+    background-color: var(--outer-bar);
+    font-weight: 900;
+}
+.table th, .table td {
+    border: 0px;
+}
+/*Table Centered*/
+.t-c table {
+    margin-left: auto;
+    margin-right: auto
+}
 
 
 
@@ -1419,7 +2472,7 @@ input[type="checkbox checked"] {
 .tag {
     background-color: var(--tag);
     border: none;
-    color: white;
+    color: var(--text-dl);
     font-size: 12px;
     padding: 1px 8px;
     text-align: center;
@@ -1431,7 +2484,7 @@ input[type="checkbox checked"] {
 
 /*Hover Underline*/
 .tag:hover {
-    color: white;
+    color: var(--text-dl);
     text-decoration: underline;
 }
 /*Editor Tags*/
@@ -1471,11 +2524,17 @@ input[type="checkbox checked"] {
 }
 
 
+/*Fix Arrow*/
+.frontmatter-container .collapse-indicator {
+    font-size: .9em;
+}
+
+
 /*Tags*/
 .frontmatter-container .tag {
     background-color: var(--tag);
     border-radius: var(--radius);
-    color: white;
+    color: var(--text-dl);
 }
 .frontmatter-container .frontmatter-alias {
     border-radius: var(--radius);
@@ -1499,9 +2558,9 @@ input[type="checkbox checked"] {
 /* Recolor Embed Title*/
 .markdown-embed-title, .file-embed-title {
     color: var(--lite-accent);
-    font-size: 20px;
+    font-size: 1.5em;
     font-family: var(--font);
-    line-height: 20px; /*Lower Height Title*/
+    line-height: 1em; /*Lower Height Title*/
     width: 100%;
     height: auto;
     text-align: center;
@@ -1511,20 +2570,31 @@ input[type="checkbox checked"] {
 }
 
 /* Recolor Embed Headings*/
-.markdown-preview-view .markdown-embed h1, .markdown-embed h2, .markdown-embed h3, .markdown-embed h4, .markdown-embed h5, .markdown-embed h6 {
+.markdown-preview-view .markdown-embed h1,
+.markdown-embed h2,
+.markdown-embed h3,
+.markdown-embed h4,
+.markdown-embed h5,
+.markdown-embed h6 {
     font-size: 20px;
     line-height: 1em;
     color: var(--accent);
     font-family: var(--font);
 }
 
-/*Embed Window*/
-.markdown-preview-view .markdown-embed, .markdown-preview-view .file-embed {
-    border: 0px;
-    margin: 5px 0;
-    background-color: var(--embed-bg);
+.markdown-preview-view .markdown-embed,
+.markdown-preview-view .file-embed,
+.internal-embed.is-loaded:not(.image-embed) {
+    border: 1px solid var(--td);
+    background-color: var(--note);
+    box-shadow: -.3em .3em var(--td);
     border-radius: var(--radius);
 }
+
+.internal-embed .markdown-embed-content > ::-webkit-scrollbar {
+    width: 5px;
+}
+
 /*Embed Note Doesn't Exist Hover*/
 .markdown-preview-view .file-embed:hover {
     background-color: var(--dark-accent);
@@ -1536,15 +2606,12 @@ input[type="checkbox checked"] {
     background-color: var(--note);
     padding: 5px 5px 0px 5px;
 }
+/*Hide Embed Link*/
+.markdown-embed .markdown-embed-link, .file-embed-link { display: none; }
+/*Display Link on Hover*/
+.markdown-embed:hover .markdown-embed-link { display: unset; }
 
-/*Embed Horiztonal Bg Color*/
-.markdown-embed .markdown-preview-view hr::after {
-    background-color: var(--dark-sidebar);
-}
-/*Recolor Embedded Blockquote BG*/
-.markdown-embed blockquote {
-    background: linear-gradient(to left, var(--note), transparent);
-}
+
 
 /*Display Embed Path**
 /*https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/264**
@@ -1599,9 +2666,9 @@ input[type="checkbox checked"] {
     padding: 5px 5px 0px 5px;
 }
 
-/*Popover Horizontal Line BG*/
+/*Popover HR, Horizontal Line BG*/
 .popover.hover-popover hr:after {
-    background-color: var(--note);
+    background-color: var(--note) !important;
 }
 
 /*Fit Text Within Popover**
@@ -1627,8 +2694,8 @@ input[type="checkbox checked"] {
 .markdown-preview-view blockquote:before {
     content: '\201D';
     position: absolute;
-    top: 20px;
-    right: 1.5%;
+    top: -.1em;
+    right: .2em;
     font-size: 50px;
     font-family: var(--font);
     color: var(--headers);
@@ -1708,13 +2775,13 @@ blockquote p { margin: 0px; }
 .footnote-backref.footnote-link:hover { color: var(--accent2-lite); }
 
 /*Display New Icon*/
-.footnote-backref.footnote-link:after { 
+.footnote-backref.footnote-link:before { 
     visibility: visible;
     display: inline-block;
+    position: absolute;
     content: "⧪"; 
     font-size: 16px;
     padding-bottom: 2px;
-    margin-left: -2.5%;
     transform: rotate(180deg);
 }
 
@@ -1730,10 +2797,11 @@ iframe {
     border-image: initial;
 }
 /*Remove File Padding*/
-.workspace-leaf-content .view-content {
+.workspace-split.mod-root .view-content {
     padding: 2px 2px;
     overflow: hidden;
 }
+
 
 
 /*----SlRvb's Custom CSS----*/
@@ -1781,6 +2849,88 @@ iframe {
     line-height: 1.3em;
     margin-block-end: 4%;
 }
+
+/*-Comments/Asides-*/
+/*Hide Aside and hover to reveal it*/
+.aside-hide {
+    text-decoration: unset;
+    text-align: justify;
+    color: transparent;
+    font-weight: unset;
+    float: right;
+    position: relative;
+    margin: .5em;
+    margin-right: -1.8em;
+    width: 1.5em;
+    height: 1.5em;
+    clear: right;
+    overflow: hidden;
+    background-color: var(--bg);
+    color: transparent;
+}
+.aside-hide:before {
+    display: block;
+    border-bottom: 2px solid var(--table);
+    content: "🗨 ";
+    color: none;
+    text-shadow: 0 0 0 var(--headers);
+    font-size: 12px;
+    padding-top: .1em;
+    padding-left: .3em;
+}
+.aside-hide:hover {
+    white-space: normal;
+    text-overflow: unset;
+    color: unset;
+    width: 400px;
+    height: unset;
+    background-color: var(--outer-bar);
+    padding: 1em;
+    padding-top: .5em;
+    z-index: 3;
+    /*box-shadow: .5em .5em var(--outer-bar);*/
+    border-right: 2px solid var(--accent);
+}
+/*Show Aside*/
+.aside-show {
+    text-decoration: unset;
+    text-align: justify;
+    font-weight: unset;
+    float: right;
+    position: relative;
+    margin-right: -25.3em;
+    margin-bottom: .2em;
+    clear: right;
+    width: 400px;
+    background-color: var(--outer-bar);
+    padding: 1em;
+    box-shadow: .3em .3em var(--headers);
+}
+
+.aside-in {
+    text-decoration: none !important;
+    text-align: justify;
+    font-weight: unset;
+    float: right;
+    position: relative;
+    margin-bottom: .2em;
+    clear: right;
+    width: 18em;
+    background-color: var(--outer-bar);
+    padding: 1em;
+    box-shadow: .3em .3em var(--headers);
+    z-index: 3;
+}
+
+.aside-in .internal-embed.is-loaded:not(.image-embed),
+.aside-in .markdown-embed {
+    width:100%;
+}
+/*Shrink Scrollbar*/
+.aside > ::-webkit-scrollbar {
+    width: 5px;
+}
+
 
 /*--Kanban--*/
 /*Credit: https://github.com/Braweria/Spectrum*/
@@ -1897,7 +3047,7 @@ iframe {
     padding-left: 10px;
 }
 .kanban .task-list-item .list-collapse-indicator {
-    padding-left: 10px;
+    position: relative;
 }
 /*Numbered List + Numbered Checklist*/
 .kanban ol .list-collapse-indicator, .kanban ol .task-list-item .list-collapse-indicator{
@@ -1905,9 +3055,7 @@ iframe {
     padding-left: 5px;
 }
 
-
-
-/*----Personal Edits----*/
+/*--Kanban Personal Edits--*/
 /*Fix Margins/Padding*/
 .kanban .internal-embed blockquote {
     padding: 1%;
@@ -1924,7 +3072,8 @@ iframe {
     display:none;
 }
 /*Shrink margins*/
-.markdown-preview-view .markdown-embed, .markdown-preview-view .file-embed {
+.markdown-preview-view .markdown-embed,
+.markdown-preview-view .file-embed {
     margin: 0;
 }
 
@@ -1965,13 +3114,14 @@ i { /*I used for image description, em is just regular italics*/
     color: var(--i-at);
     text-align: center;
     background-color: var(--outer-bar);
+    padding: 0 1em;
 }
 
 i[alt*="right"] {
     display: block;
     text-align: right;
     background-color: var(--outer-bar);
-    padding-right: 2%;
+    padding-right: .8em;
 }
 
 
@@ -1979,7 +3129,7 @@ i[alt*="left"] {
     display: block;
     text-align: left;
     background-color: var(--outer-bar);
-    padding-left: 2%;
+    padding-left: .8em;
 }
 
 i[alt*="clear"] {
@@ -2234,6 +3384,13 @@ img[alt*="sprf"]{
     margin-right: auto;
 }
 
+.internal-embed[alt*="inline"]{
+    display: inline;
+}
+.internal-embed[alt*="block"]{
+    display: block !important;
+}
+
 /*Embed Link Hide/Move*/
 .internal-embed[alt*="nlk"] .markdown-embed-link {
     display: none;
@@ -2249,6 +3406,7 @@ img[alt*="sprf"]{
 }
 
 
+
 /*Title Hide/Show*/
 .internal-embed[alt*="no-title"] .markdown-embed-title, .file-embed-title{
     display: none;
@@ -2259,13 +3417,35 @@ img[alt*="sprf"]{
 }
 
 .internal-embed[alt*="right"] {
-    margin-left: auto;
-    margin-right: 0;
+    float: right;
+    margin-left: .5em;
 }
 .internal-embed[alt*="left"] {
-    margin-left: 0;
-    margin-right: auto;
+    float: left;
+    margin-right: .5em;
 }
+.internal-embed[alt*="center"] {
+    margin: auto;
+}
+
+.internal-embed[alt*="nob"] li {
+    list-style: none;
+    margin: 0;
+}
+.internal-embed[alt*="nob"] ul{
+    padding-inline-start: 0;
+}
+.internal-embed[alt*="em+"] .markdown-embed .markdown-preview-view,
+.markdown-preview-view .internal-embed[alt*="em+"]:not(.image-embed) {
+    padding: 20px 10px;
+    display: block !important;
+    width: 100%;
+    background-color: var(--embed-bg);
+}
+.internal-embed[alt*="em+"] .markdown-embed-link{
+    color: var(--accent);
+}
+
 
 .internal-embed[alt*="nmg"] .markdown-embed .markdown-preview-view {
     margin: 0;
@@ -2350,21 +3530,18 @@ b {
     margin-left: 2%;
 }
 
-
+/*--Recall--*/
+.recall { 
+    text-decoration: unset;
+    color: transparent;
+    text-shadow: 0 0 10px var(--text-normal);
+}
+.recall:hover {
+    color: var(--text-normal);
+    text-shadow: 0 0 0px var(--text-normal);
+}
 
 /*----Plugins----*/
-/*--Style Settings--*/
-.setting-item-description p {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    line-height: 1.2em;
-}
-.themed-color-wrapper > div {
-    padding: .1em !important;
-    padding-left: .3em !important;
-    padding-right: .3em !important;
-    border-radius: var(--radius) !important;
-}
 
 /*--Sliding Panes--*/
 /*Hide the gradient of the Title Pane*/
@@ -2383,6 +3560,7 @@ body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf {
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header {
     border-right: 2px solid var(--headers);
     border-bottom: none;
+    padding-right: 2px;
 }
 
 /*Hide Black Border When Header is Rotated*/
@@ -2394,8 +3572,23 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 body.plugin-sliding-panes .workspace-split.mod-root .view-content {
     border-left: 3px solid var(--bg);
 }
+.title-wrap.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header  {
+    width: auto !important;
+    writing-mode: vertical-rl;
+}
 
-
+/*--Obsidian Tabs Plugin--*/
+.mod-root.workspace-split.mod-vertical .workspace-split.mod-vertical > div.workspace-leaf,
+.mod-root.workspace-split.mod-vertical > div.workspace-leaf {
+    border-radius: var(--radius) !important;
+    border: 0 !important;
+    max-width: unset !important;
+}
+/*Tab Numbers*/
+.view-header .view-header-title::before {
+    background-color: var(--embed-bg) !important;
+    color: var(--soft-text);
+}
 
 /*--Dataview Table--*/
 .table-view-table > thead > tr > th {
@@ -2405,71 +3598,82 @@ body.plugin-sliding-panes .workspace-split.mod-root .view-content {
     border-bottom: solid var(--accent) !important;
     background-color: var(--embed-bg);
 }
-
+.kanban .dataview-ul {
+    display: block !important;
+    padding-inline-start: 1em !important;
+}
 
 /*--Checklist Plugin Edit--*/
-/*Add padding to Checklist Pane*/
-.todo-list .group {
-    margin: 4%;
+/*Square Checklist*/
+.checklist-plugin-main li,
+.checklist-plugin-main .checkbox,
+.checklist-plugin-main .count {
+    border-radius: var(--radius) !important;
 }
-
-/*Shrink Checklist Header*/
-.todo-list .group-header {
-    font-size: 14px !important;
-}
-
-/*Resize/Recolor/Square Task*/
-.todo-list .item.svelte-zpfope.svelte-zpfope {
-    background-color: var(--background-primary-alt) !important;
-    border-radius: var(--radius);
-    font-size: 14px;
-    margin-bottom: 1%;
-}
-
-/*Checkbox*/
-.todo-list .toggle.svelte-zpfope.svelte-zpfope {
-    padding-right: 4px;
-}
-/*Square Checkbox*/
-.todo-list .checkbox.svelte-y3iyim {
-    border-radius: var(--radius);
-    border-color: var(--accent) !important;
-}
-
-
-/*Recolor Every Odd Task*/
-.todo-list .item.svelte-zpfope.svelte-zpfope:nth-child(odd) {
+.checklist-plugin-main li { 
+    border-left: 4px solid var(--accent) !important;
     background-color: var(--code-bg) !important;
 }
-
-/*Resize Task Title*/
-.todo-list .content.svelte-zpfope.svelte-zpfope {
-    padding: 1% !important;
-    line-height: 18px;
+.checklist-plugin-main li:nth-child(even) {
+    border-left: 4px solid var(--accent2) !important;
 }
-/*Square Counter*/
-.todo-list .count.svelte-im5pnh {
-    border-radius: var(--radius);
-}
-.todo-list .content.svelte-zpfope.svelte-zpfope {
-    word-break: break-word;
+.checklist-plugin-main li:hover,
+.checklist-plugin-main li:nth-child(even):hover { 
+    background-color: var(--outer-bar) !important;
 }
 
+/*Reduce Padding*/
+.checklist-plugin-main.svelte-1rowz1t { 
+    margin-top: -.8em !important;
+    padding: .4em !important; 
+}
+.checklist-plugin-main .content { padding: 0 !important; }
+.checklist-plugin-main li.compact {
+    padding: .1em;
+    margin-bottom: .4em !important;
+}
+
+/*Hide Bullet*/
+.checklist-plugin-main li.compact:before,
+.checklist-plugin-main li.classic:before { 
+    display: none !important; 
+}
+/*Resize Checkbox*/
+.checklist-plugin-main .compact .toggle { padding: 0 .4em !important; }
+.checklist-plugin-main .checkbox {
+    border-width: 2px !important;
+    min-width: .5em !important;
+    min-height: .5em !important;
+    border-color: var(--accent) !important;
+}
+.checklist-plugin-main .toggle:hover { 
+    background-color: transparent !important; 
+}
+.checklist-plugin-main .compact .checkbox { 
+    width: 1.2em !important;
+    height: 1.2em !important;
+}
+.checklist-plugin-main .classic .checkbox { 
+    width: 1.5em !important;
+    height: 1.5em !important;
+}
 
 
 /*Button Plugin*/
 .button-default {
     border-radius: var(--radius) !important;
     box-shadow: none !important;
+    background-color: var(--th) !important;
+    border: 0 !important;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    color: var(--text-dl) !important;
 }
 .button-default:hover {
-    box-shadow: 0 4px 4px var(--td), 0 10px 10px var(--td) !important;
-    color: var(--text);
+    box-shadow: 0 .5em var(--embed-bg) !important;
+    color: var(--text-dl) !important;
 }
-.block-language-button > div {
-    display:  !important;
-}
-
 
 
 
@@ -2554,6 +3758,10 @@ g.classGroup line {
     border-radius: var(--radius) !important;
 }
 
+.timeline-container {
+    padding: 5px 15px !important;
+}
+
 /*Line*/
 .timeline::after {
     background-color: var(--outer-bar) !important;
@@ -2571,6 +3779,9 @@ g.classGroup line {
 }
 
 /*Arrows*/
+.timeline-left::before, .timeline-right::before {
+    top: 16px !important;
+}
 .timeline-left::before {
     border-color: transparent transparent transparent var(--background-secondary-alt) !important;
 }
@@ -2579,6 +3790,462 @@ g.classGroup line {
 }
 
 
+
+/*--Gallery Plugin--*/
+.workspace-leaf-content[data-type="ob-gallery-info"] .markdown-preview-view { padding: .5em; }
+.ob-gallery-display > ul { padding-inline-start: 0; }
+
+/*Info Block*/
+.gallery-info-container {
+    background-color: transparent !important;
+    border-radius: var(--radius) !important;
+    border: 1px solid var(--outline) !important;
+    box-shadow: -.3em .3em var(--outline);
+}
+/*Tags*/
+.gallery-info-section-tags > .tag {
+    border-radius: var(--radius) !important;
+    color: var(--text-dl) !important;
+    background-color: var(--tag) !important;
+    margin-right: .2em !important;
+}
+.gallery-info-section-tags > .tag:hover { text-decoration: underline !important; }
+
+
+/*Text*/
+.gallery-info-section-label { 
+    color: var(--headers) !important; 
+    font-weight: 900;
+}
+.gallery-info-section-value { color: var(--text) !important; }
+
+
+/*--Kanban Plugin--*/
+/*Show Scrollbar*/
+.workspace-leaf-content[data-type="kanban"] .view-content {
+    overflow: auto;
+}
+/*Board Background*/
+.kanban-plugin {
+    background-color: var(--note) !important;
+}
+.kanban-plugin__lane-header-wrapper {
+    margin: 0 !important;
+}
+
+/*Outer box*/
+.kanban-plugin__lane { 
+    background-color: var(--note) !important;
+    border-radius: var(--border-radius) !important;
+    border: 3px solid var(--outline) !important;
+    box-shadow: -.2em .2em var(--outline) !important;
+}
+
+
+/*Items*/
+.kanban-plugin__item {
+    border: 0 !important;
+    border-left: 3px solid var(--th) !important;
+    border-radius: var(--border-radius) !important;
+}
+.kanban-plugin__item-content-wrapper {
+    background-color: var(--outer-bar) !important;
+    border-radius: var(--border-radius) !important; 
+}
+.kanban-plugin__item-content-wrapper:hover { 
+    background-color: var(--hvr2) !important;
+    border-radius: var(--border-radius) !important;
+
+}
+.kanban-plugin__item-title .markdown-preview-view {
+    font-size: 1em !important; /*calc(var(--f-s-text) -.*/
+}
+
+.kanban-plugin__lane-input,
+.kanban-plugin__item-input { 
+    border-radius: var(--border-radius) !important;
+}
+.kanban-plugin__lane-items {
+    border-radius: var(--radius) !important;
+}
+
+/*Buttons*/
+.kanban-plugin__item-button-wrapper {
+    border: 0 !important;
+    background-color: var(--code-bg) !important;
+    padding: 0 !important;
+}
+.kanban-plugin__new-item-button {
+    background-color: transparent !important;
+    padding: 1em !important;
+}
+.kanban-plugin__new-lane-button-wrapper {
+    position: fixed;
+    width: auto !important;
+    bottom: 2em;
+    right: 50%;
+}
+
+.kanban-plugin__new-lane-button { 
+    background-color: var(--outer-bar) !important;
+    padding: 0 .3em;
+    color: var(--fg);
+    text-align: center !important;
+    border: 1px solid var(--bg);
+    box-shadow: -.1em .1em var(--bg) !important;
+}
+.kanban-plugin__item button.kanban-plugin__item-edit-button:hover,
+.kanban-plugin__lane button.kanban-plugin__lane-settings-button:hover {
+    color: var(--text-dl) !important;
+} 
+
+/*--Style Settings Plugin--*/
+/*--Style Settings Menu--*/
+.style-settings-container::not(.is-mobile) {
+    padding-bottom: 0 !important;
+    border-left: 2px solid var(--table);
+    padding-left: 2.2em;
+}
+.style-settings-container:hover { 
+    border-color: var(--accent); 
+}
+.style-settings-heading + .style-settings-container::not(.is-mobile) {
+    padding-left: 30px;
+}
+
+/*Text Adjustments*/
+.style-settings-heading {
+    padding-bottom: 1px !important;
+}
+.style-settings-heading .setting-item-name { 
+    color: var(--headers);
+    font-weight: 900;
+    font-size: 1.1em !important;
+}
+.style-settings-container .setting-item-name {
+    font-weight: 900;
+    font-size: 1em !important;
+}
+.style-settings-container .setting-item-description {
+    line-height: 1.2em;
+}
+.style-settings-container .setting-item-description small {
+    color: var(--footnote);
+}
+
+.themed-color-wrapper > div {
+    padding: .1em !important;
+    padding-left: .3em !important;
+    padding-right: .3em !important;
+    border-radius: var(--radius) !important;
+}
+
+
+
+/*--CSS Class Toggles--*/
+/*Hide Vault Title*/
+.v-non .nav-folder.mod-root > .nav-folder-title {
+    display: none;
+}
+.hr-tog .markdown-preview-view hr::after, .hr-tog div:not(.CodeMirror-activeline)>.HyperMD-hr-bg::after {
+    display: none;
+}
+/*--Settings Specific--*/
+.ed-pre .markdown-preview-view, .ed-pre li {
+    font-family: var(--pre-font);
+}
+.ed-pre .cm-s-obsidian  {
+    font-family: var(--ed-font);
+}
+
+/*Tags*/
+.tag-notion a.tag {
+    border-radius: 5px;
+}
+.tag-bubble a.tag {
+    border-radius: 25px;
+}
+.tag-outline a.tag {
+    background-color: transparent;
+    border: var(--tag-o) solid var(--tag);
+    color: var(--tag);
+    line-height: 1.3em;
+}
+
+
+/*-Lists CSS-*/
+/*Bullet Shapes*/
+.no-bull .cm-s-obsidian span.cm-formatting-list-ul {
+    visibility: hidden;
+}
+.no-bull .cm-s-obsidian span.cm-formatting-list-ul:before {
+    content: var(--bullet);
+    margin-right: -10px;
+    visibility: visible;
+}
+/*Default Bullets*/
+.def-bull .cm-s-obsidian span.cm-formatting-list-ul:before {
+    visibility: hidden;
+}
+.def-bull ul li:before {
+    content: "•";
+    padding-left: 4px;
+    font-size: 20px;
+}
+
+/*Bullet Line Original*/
+.bul-li-o li {
+    padding-left: 4px;
+    border-left: 2px solid var(--accent);
+}
+.bul-li-o li:nth-child(even) {
+    border-left: 2px solid var(--accent2);
+}
+.bul-li-o .markdown-preview-view ul > .bul-li-o li.task-list-item {
+    text-indent: -1.5em !important;
+}
+.b-li-o li {
+    border: 0;
+    padding: 0;
+}
+.b-li-o li::before {
+    color: var(--fg);
+}
+.b-li-o ul ul,
+.b-li-o ol {
+    position: relative;
+}
+.b-li-o ul ul::before,
+.b-li-o ol ol::before {
+    content:'';
+    border-left: 2px solid var(--accent);
+    position: absolute;
+}
+.b-li-o ul ul::before,
+.b-li-o ol ol::before {
+    left: -1em;
+    top: 0;
+    bottom: 0; 
+}
+.b-li-o  li.task-list-item > ol {
+    left: -.5em;
+}
+
+
+.b-li-o .markdown-preview-view ul > .b-li-o li.task-list-item {
+    text-indent: 0em;
+}
+
+/*Colored Bullet Lines*/
+.bul-li-col ul > li,
+.bul-li-col ul ul::before
+{ border-color: var(--b-l-1); }
+.bul-li-col ul ul > li, 
+.bul-li-col ul ul ul::before
+{ border-color: var(--b-l-2); }
+.bul-li-col ul ul ul > li, 
+.bul-li-col ul ul ul ul::before
+{ border-color: var(--b-l-3); }
+.bul-li-col ul ul ul ul > li, 
+.bul-li-col ul ul ul ul ul::before
+{ border-color: var(--b-l-4); }
+.bul-li-col ul ul ul ul ul > li, 
+.bul-li-col ul ul ul ul ul ul::before
+{ border-color: var(--b-l-5); }
+.bul-li-col ul ul ul ul ul ul > li, 
+.bul-li-col ul ul ul ul ul ul ul::before
+{ border-color: var(--b-l-6); }
+
+.bul-li-col ol > li, 
+.bul-li-col ol ol::before
+{ border-color: var(--b-l-1); }
+.bul-li-col ol ol > li, 
+.bul-li-col ol ol::before
+{ border-color: var(--b-l-2); }
+.bul-li-col ol ol ol > li, 
+.bul-li-col ol ol ol::before
+{ border-color: var(--b-l-3); }
+.bul-li-col ol ol ol ol > li, 
+.bul-li-col ol ol ol ol::before
+{ border-color: var(--b-l-4); }
+.bul-li-col ol ol ol ol ol > li, 
+.bul-li-col ol ol ol ol ol::before
+{ border-color: var(--b-l-5); }
+.bul-li-col ol ol ol ol ol ol > li,
+.bul-li-col ol ol ol ol ol ol::before
+{ border-color: var(--b-l-6); }
+
+
+
+
+/*Note Title Wrap*/
+.title-wrap .view-header-title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    white-space: pre-wrap;
+    line-height: 22px;
+}
+.title-wrap .view-header {
+    height: auto;
+}
+
+/*Naked Embeds*/
+.naked-em .markdown-preview-view .markdown-embed,
+.naked-em .markdown-preview-view .file-embed,
+.naked-em .internal-embed,
+.naked-em .markdown-embed .markdown-preview-view,
+.naked-em .markdown-embed li,
+.naked-em .markdown-embed p {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none !important;
+    border: var(--radius) !important;
+}
+.naked-em .internal-embed-link{
+    background-color: var(--background-secondary);
+    color: transparent;
+    padding: 10px 10px 5px 10px;
+}
+.naked-em .internal-embed:hover {
+    color: var(--accent2-lite);
+}
+.naked-em .internal-embed .markdown-embed-content > ::-webkit-scrollbar {
+    width: 0px;
+}
+.naked-em .internal-embed:not(.image-embed) {
+	display: inline-flex;
+}
+
+
+/*-Original Embeds-*/
+/*Embed Window*/
+.org-em .markdown-preview-view .markdown-embed,
+.org-em .markdown-preview-view .file-embed,
+.org-em .internal-embed.is-loaded:not(.image-embed) {
+    border: none;
+    background-color: var(--embed-bg);
+    border-radius: var(--radius);
+    box-shadow: unset !important;
+}
+/*Recolor Embedded Blockquote BG*/
+.org-em .markdown-embed blockquote {
+    background: linear-gradient(to right, var(--note), transparent);
+}
+/*Embed HR, Horiztonal Bg Color*/
+.org-em .markdown-embed .markdown-preview-view hr::after {
+    background-color: var(--embed-bg);
+}
+
+
+/*Hide Header Line*/
+.h-line h1:after,
+.h-line h2:after,
+.h-line h3:after,
+.h-line h4:after,
+.h-line h5:after,
+.h-line h6:after,
+.h-line .cm-s-obsidian pre.HyperMD-header:after {
+    display: none;
+}
+
+/*Heading/Header Hash Above Text*/
+.hash-top .cm-s-obsidian pre.HyperMD-header > span > span:first-child {
+    display: block;
+    margin-bottom: -8px;
+}
+
+/*Specific Heading Adjustments*/
+.head-spec h1 { 
+    color: var(--sphd-pre-1);
+    font-family: var(--sphd-pre-ff-1);
+    font-size: var(--sphd-pre-fs-1);
+}
+.head-spec h2 { 
+    color: var(--sphd-pre-2);
+    font-family: var(--sphd-pre-ff-2);
+    font-size: var(--sphd-pre-fs-2);
+}
+.head-spec h3 { 
+    color: var(--sphd-pre-3);
+    font-family: var(--sphd-pre-ff-2);
+    font-size: var(--sphd-pre-fs-3);
+}
+.head-spec h4 { 
+    color: var(--sphd-pre-4);
+    font-family: var(--sphd-pre-ff-2);
+    font-size: var(--sphd-pre-fs-2);
+}
+.head-spec h5 { 
+    color: var(--sphd-pre-5);
+    font-family: var(--sphd-pre-ff-2);
+    font-size: var(--sphd-pre-fs-2);
+}
+.head-spec h6 { 
+    color: var(--sphd-pre-6);
+    font-family: var(--sphd-pre-ff-1);
+    font-size: var(--sphd-pre-fs-1);
+}
+.head-spec .cm-header-1 { 
+    color: var(--sphd-ed-1);
+    font-family: var(--sphd-ed-ff-1);
+    font-size: var(--sphd-ed-fs-1);
+}
+.head-spec .cm-header-2 { 
+    color: var(--sphd-ed-2);
+    font-family: var(--sphd-ed-ff-2);
+    font-size: var(--sphd-ed-fs-2);
+}
+.head-spec .cm-header-3 { 
+    color: var(--sphd-ed-3);
+    font-family: var(--sphd-ed-ff-2);
+    font-size: var(--sphd-ed-fs-3);
+}
+.head-spec .cm-header-4 { 
+    color: var(--sphd-pre-4);
+    font-family: var(--sphd-ed-ff-2);
+    font-size: var(--sphd-ed-fs-2);
+}
+.head-spec .cm-header-5 { 
+    color: var(--sphd-pre-5);
+    font-family: var(--sphd-ed-ff-2);
+    font-size: var(--sphd-ed-fs-2);
+}
+.head-spec .cm-header-6 { 
+    color: var(--sphd-pre-6);
+    font-family: var(--sphd-ed-ff-1);
+    font-size: var(--sphd-ed-fs-1);
+}
+
+
+/*-Plugin Toggles-*/
+/*Text Expander: Hide Code in Preview Mode*/
+.hide-expand .markdown-preview-view pre[class*="language-expander"],
+.hide-expand .markdown-preview-view code[class*="language-expander"] {
+    display: none;
+}
+/*Dataview: Compact and Hide Bullets*/
+.dv .dataview-ul li::before {
+    display: none;
+}
+.dv .dataview-ul {
+    margin-left: -2em;
+}
+.dv .dataview-ul {
+    margin-block-end: 0 !important;
+}
+
+/*Dim First Column Link*/
+.dv .dataview td:nth-child(1) {
+    color: var(--headers) !important;
+}
+.dv .dataview td:nth-child(1) .internal-link {
+    color: var(--lines) !important;
+}
+.dv .dataview td:nth-child(1) .internal-link:hover {
+    color: var(--accent2) !important;
+}
 
 /*----Exported PDFs----*/
 /*Fix Poems*/
@@ -2592,11 +4259,67 @@ g.classGroup line {
 
 
 /*----Mobile----*/
-/*Popover*/
 @media (max-width: 500px) {
-    .popover.hover-popover {
-        width: 400px;
+    
+    .theme-dark, .theme-light {
+        /*Mobile Sizes*/
+        --radius: 0px;
+        --tiny: 100px;
+        --small: 150px;
+        --small-med: 200px;
+        --med-small: 250px;
+        --medium: 300px;
+        --med-tall: 450px;
+        --tall: 500px;
     }
+    /*Popover Hover Fits Mobile Screen*/
+    .popover.hover-popover.is-loaded {
+        width:100%;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .aside-hide:hover {
+        width: 100%;
+    }
+}
+/*Minimize Sidebar Spacing*/
+.workspace-drawer-header-info {
+    margin: 0;
+}
+.workspace-drawer-active-tab-header {
+    margin: 1em 0 0 0;
+}
+
+/*Fix Slider*/
+.is-mobile .setting-item.mod-slider .setting-item-control {
+    margin-top: .5em !important;
+    margin-bottom: 1em;
+}
+
+/*Wrap Nav and Search Buttons*/
+.is-mobile .workspace-drawer-actions,
+.is-mobile .nav-buttons-container {
+    flex-wrap: wrap;
+}
+/*Hide Vault Title*/
+.is-mobile .nav-folder.mod-root > .nav-file-title,
+.is-mobile .nav-folder.mod-root > .nav-folder-title {
+    display: none;
+}
+/*Fix Outline Spacing*/
+.is-mobile .outline {
+    margin: 0 -.2em;
+}
+.is-mobile .view-content {
+    height: calc(100% - .5em);
+}
+
+/*Kanban Mobile*/
+.is-mobile .kanban ul, 
+.is-mobile .kanban ol {
+    padding-inline-start: 0;
 }
 
 
@@ -2613,7 +4336,7 @@ g.classGroup line {
     line-height: 0px;
 }
 
-site-body-left-column-site-name {
+.site-body-left-column-site-name {
     font: var(--font);
     color: var(--headers);
 }
@@ -2632,7 +4355,7 @@ site-body-left-column-site-name {
     position: absolute;
     right: 100%;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     background-color: var(--outer-bar);
     z-index: 0;

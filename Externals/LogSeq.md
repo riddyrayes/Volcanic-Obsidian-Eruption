@@ -4,5 +4,4 @@ time: 21:23
 tags: 
 ---
 
-# LogMode
-![[Mechanisms#LogMode]]
+# LogSeq

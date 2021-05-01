@@ -1,7 +1,7 @@
 ---
 created: 2021-03-29
 summary: "A guide to the Obsidian.md ecosystem, from @riddyrayes"
-version: 0.2
+version: 0.3
 cssclass: logmode
 ---
 
@@ -23,6 +23,10 @@ A local wiki style introduction to **Obsidian ecosystem** with a 🌋 volcano th
 ```ad-info
 Reader is requested to only read ==The Quakes== part on day 1 of using Obsidian.
 ```
+---
+<br>
+<br>
+
 
 # The Quakes
 ```abstract

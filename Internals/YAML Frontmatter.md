@@ -6,3 +6,6 @@ alias: Frontmatter
 ---
 
 # YAML Frontmatter
+- Alias
+- Tags
+- [[Query and Dataview|Dataview]]

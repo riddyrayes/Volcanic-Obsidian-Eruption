@@ -4,4 +4,4 @@ time: 21:22
 tags: 
 ---
 
-# 
+# MathJax Equations

@@ -127,7 +127,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.47597142576979246,
+                  "scale": 0.47597142576979196,
                   "close": true
                 }
               }
@@ -144,24 +144,23 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 290.3992919921875,
-    "collapsed": true
+    "width": 290.3992919921875
   },
   "active": "4f5e4a2347df446d",
   "lastOpenFiles": [
     "Volcanic Obsidian Eruption.md",
-    "Mechanisms/Mechanisms.md",
-    "Externals/Externals.md",
-    "Internals/Internals.md",
+    "Community/Bryan Jenks.md",
+    "Community/Community.md",
     "Developer Mode/Developer Mode.md",
-    "README.md",
-    "Developer Mode/CSS Snippets.md",
-    "Internals/YAML Frontmatter.md",
-    "Internals/The Graph View.md",
-    "Internals/Templeter Scripts.md"
+    "Externals/Externals.md",
+    "Externals/Mail.md",
+    "Externals/LogSeq.md",
+    "Internals/Internals.md",
+    "Internals/MathJax Equations.md",
+    "Externals/LaTex.md"
   ]
 }

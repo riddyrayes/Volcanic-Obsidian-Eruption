@@ -18,10 +18,11 @@ A local wiki style introduction to **Obsidian ecosystem** with a 🌋 volcano th
 - [[#The Ash and Lava]] - sharing the vault to public 
 - [[#Back to Dormant]] - further development in ecosystem and workflow
 
-> DON'T PANIC
+> 🛑 DON'T PANIC
 
 ```ad-info
-Reader is requested to only read ==The Quakes== part on day 1 of using Obsidian.
+- Reader is requested to only read ==The Quakes== part on day 1 of using Obsidian.
+- Reader may use CTRL+Scroll to increase or decrease the font size of the text.
 ```
 ---
 <br>
@@ -264,7 +265,7 @@ There are numerous CSS snippets from the community used for various purposes.
 # The Explosion
 > _spider webbing a large vault_
 ## The Graph View
-> More in the article [[The Graph View]]
+> More in the article [[Graph View]]
 ### Local Graph
 
 

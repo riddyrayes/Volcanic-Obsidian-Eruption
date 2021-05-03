@@ -10,7 +10,7 @@ tags:
 
 # Zotfile
 # MDNotes
-
+^[[@cat put together some nifty placeholders for Zotero that utilize Dataview's inline fields](https://discord.com/channels/686053708261228577/722584061087842365/836340716485476373)]
 # Dataview
 
 # Citation

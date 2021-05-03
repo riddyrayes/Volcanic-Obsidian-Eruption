@@ -6,7 +6,7 @@ tags:
 
 # Folders - a misunderstood hero
 
-# Search: _folders, anti-folders_
+# Search: folders, anti-folders
 ## Folders search
 ~~~
 ```query
@@ -39,9 +39,9 @@ type: folder_brief_live
 ~~~
 
 # Folder Colors and Emojis (snippet)
-[[CSS Snippets|CSS]] can help add colors and emoji for specific folder name or the folders starting with some string.^[[Adding Color to Obsidian--- A Rainbow of Possibility! - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/adding-color-to-obsidian-a-rainbow-of-possibility/12805/11)]
+[[CSS Development|CSS]] can help add colors and emoji for specific folder name or the folders starting with some string.^[[Adding Color to Obsidian--- A Rainbow of Possibility! - Feature requests - Obsidian Forum](https://forum.obsidian.md/t/adding-color-to-obsidian-a-rainbow-of-possibility/12805/11)]
 ![[Pasted image 20210418133355.png|right]]
-
+#CSS
 - Color for Folder that starts with a "03"
 ```css
     .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="03"],

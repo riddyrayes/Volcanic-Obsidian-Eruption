@@ -759,12 +759,13 @@
     font-family: "Rubik" !important;
   }
 
-h1{
+.markdown-preview-view h1, .cm-s-obsidian .cm-header-1{
     font-family: "Recursive";
     color: #F39A05;
     font-weight: 900 !important;
+    font-size: 250%;
 }
-h1:after {
+.markdown-preview-view h1:after , .cm-s-obsidian pre.HyperMD-header-1:after {
     content: "";
     display: block;
     width: 100%;
@@ -778,3 +779,15 @@ h1:after {
     line-height: 100%;
     font-size: larger;
 }
+
+.markdown-preview-view .markdown-embed h1{
+  font-family: "Recursive";
+  color: #F39A05;
+  font-size: 200% !important;
+}
+
+.markdown-preview-view h2, .cm-s-obsidian .cm-header-2 { font-size: 220%; }
+.markdown-preview-view h3, .cm-s-obsidian .cm-header-3 { font-size: 200%; }
+.markdown-preview-view h4, .cm-s-obsidian .cm-header-4 { font-size: 170%; }
+.markdown-preview-view h5, .cm-s-obsidian .cm-header-5 { font-size: 140%; }
+.markdown-preview-view h6, .cm-s-obsidian .cm-header-6 { font-size: 110%; }

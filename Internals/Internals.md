@@ -4,15 +4,24 @@ time: 22:39
 tags:
 ---
 
-![[Volcanic Obsidian Eruption#In-built features]]
+> After: [[Volcanic Obsidian Eruption#In-built features]]
 
-# Settings
+# Settings and Core Plugins
+> After: [[Volcanic Obsidian Eruption#Necessary Settings]]
+- [[Graph View]]
+
+## Search
+
+## Backlinks
+
+## Hotkeys
+
 # Options from an opened note
-# A complete list of in-built features and core plugins
-- Search
-- [[YAML Frontmatter]]
-- [[The Graph View]]
 
+# Other smaller features
+- [[YAML Frontmatter]] allows alias for a note that come in `[[` search results
+- ALT+Click produces multiple cursors
+- [[Obsidian URI]]
 
 # Overview
  

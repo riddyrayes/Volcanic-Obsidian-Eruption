@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "4f5e4a2347df446d",
+        "id": "9366d8c0538828b5",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Volcanic Obsidian Eruption.md",
+            "file": "Community/Eleanor Konik.md",
             "mode": "preview"
           }
         }
@@ -39,10 +39,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "logmode",
+                "query": "tag:#CSS",
                 "matchingCase": true,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -71,7 +71,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 206.00247955322266
+    "width": 193.00247955322266
   },
   "right": {
     "id": "ac4379189a15bf05",
@@ -87,8 +87,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Volcanic Obsidian Eruption.md",
-                "collapseAll": false,
+                "file": "Community/Eleanor Konik.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -104,7 +104,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Volcanic Obsidian Eruption.md",
+                "file": "Community/Eleanor Konik.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Volcanic Obsidian Eruption.md"
+                "file": "Community/Eleanor Konik.md"
               }
             }
           }
@@ -148,19 +148,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.3992919921875
+    "width": 307.3993835449219,
+    "collapsed": true
   },
-  "active": "4f5e4a2347df446d",
+  "active": "9366d8c0538828b5",
   "lastOpenFiles": [
-    "Volcanic Obsidian Eruption.md",
-    "Community/Bryan Jenks.md",
+    "Community/Eleanor Konik.md",
     "Community/Community.md",
-    "Developer Mode/Developer Mode.md",
-    "Externals/Externals.md",
-    "Externals/Mail.md",
-    "Externals/LogSeq.md",
-    "Internals/Internals.md",
-    "Internals/MathJax Equations.md",
-    "Externals/LaTex.md"
+    "Volcanic Obsidian Eruption.md",
+    "SkepticMystic.md",
+    "Community/Obsidian Community Talks.md",
+    "Mechanisms/Mechanisms.md",
+    "Community/Bryan Jenks.md",
+    "Community/Nick Milo.md",
+    "Community/Untitled.md",
+    "Externals/Zotero.md"
   ]
 }

@@ -34,8 +34,8 @@ A local wiki style introduction to **Obsidian ecosystem** with a 🌋 volcano th
 the very first of the first stuff
 ``` 
 
-```ad-note
-The reader is advised to 
+```ad-tip
+title: The reader is advised to 
 - Open a blank vault and make a note
 - readout the Official Help pages alongside this section of the wiki; available at bottom left '?' button.
 ```

@@ -4,14 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9366d8c0538828b5",
+        "id": "05a7b230f9b443a2",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Community/Eleanor Konik.md",
-            "mode": "preview"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -39,7 +36,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#CSS",
+                "query": "CSS",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -71,7 +68,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 193.00247955322266
+    "width": 193.00247955322266,
+    "collapsed": true
   },
   "right": {
     "id": "ac4379189a15bf05",
@@ -87,7 +85,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Community/Eleanor Konik.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,30 +101,29 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Community/Eleanor Konik.md",
                 "options": {
-                  "collapse-filter": true,
+                  "collapse-filter": false,
                   "search": "",
-                  "localJumps": 1,
+                  "localJumps": 2,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": false,
                   "showTags": false,
                   "showAttachments": false,
                   "hideUnresolved": false,
-                  "collapse-color-groups": true,
+                  "collapse-color-groups": false,
                   "colorGroups": [],
                   "collapse-display": false,
-                  "showArrow": false,
-                  "textFadeMultiplier": -2.2,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
+                  "showArrow": true,
+                  "textFadeMultiplier": -3,
+                  "nodeSizeMultiplier": 2.57360703812317,
+                  "lineSizeMultiplier": 5,
+                  "collapse-forces": false,
+                  "centerStrength": 0,
+                  "repelStrength": 0,
+                  "linkStrength": 0,
                   "linkDistance": 250,
-                  "scale": 0.47597142576979196,
+                  "scale": 0.7285790905534586,
                   "close": true
                 }
               }
@@ -138,30 +134,27 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Community/Eleanor Konik.md"
-              }
+              "state": {}
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 307.3993835449219,
-    "collapsed": true
+    "width": 315.2218322753906
   },
-  "active": "9366d8c0538828b5",
+  "active": "05a7b230f9b443a2",
   "lastOpenFiles": [
-    "Community/Eleanor Konik.md",
-    "Community/Community.md",
-    "Volcanic Obsidian Eruption.md",
-    "SkepticMystic.md",
-    "Community/Obsidian Community Talks.md",
-    "Mechanisms/Mechanisms.md",
-    "Community/Bryan Jenks.md",
-    "Community/Nick Milo.md",
-    "Community/Untitled.md",
-    "Externals/Zotero.md"
+    "Developer Mode/Templater Templates Development.md",
+    "Community/Murf.md",
+    "Murf.md",
+    "Developer Mode/Templeter Scripts.md",
+    "Internals/Internals.md",
+    "Internals/Templates.md",
+    "Internals/Templeter Scripts.md",
+    "Externals/Externals.md",
+    "Developer Mode/Developer Mode.md",
+    "Community/Community.md"
   ]
 }

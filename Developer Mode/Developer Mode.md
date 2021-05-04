@@ -9,12 +9,15 @@ tags:
 
 ![[CSS Development]]
 
+---
 
 ![[Plugins Development]]
 
+---
 
 ![[Templater Templates Development]]
 
+---
 
 # Developer Mode Overview
  

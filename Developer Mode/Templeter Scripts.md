@@ -5,6 +5,8 @@ tags:
 ---
 
 # Templeter Scripts
+![[Templates#^6c9254]]
+A list of them is availbable at [Templates Showcase - Discussions · SilentVoid13/Templater](https://github.com/SilentVoid13/Templater/discussions/categories/templates-showcase)
 - [Requires @argenos Natural Language Dates Plugin. Pop up input box asks for date and then parses it as a date and turns it into a Daily Notes Page page ref. · GitHub](https://gist.github.com/GitMurf/de74ea0a297f44041034bb97170357f0)
 - [Obsidian Quick Capture using templater. Activate from anywhere in your vault to record quick ideas, notes, time logging, etc. The Quick Capture file does NOT need to be open. · GitHub](https://gist.github.com/GitMurf/817a6c9e73e1d1e312fc1a1735edb8d6)
 - [Replace a block ref in the current line with the actual text from the block ref. It replicates Roam's feature where you right-click a block ref and choose "Replace as text". · GitHub](https://gist.github.com/GitMurf/c34ab5aedb2161ac26cc8076a116000a)
